@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MAGComfortTextInput_Example' do
+  pod 'MAGComfortTextInput', :path => '../'
+
+  target 'MAGComfortTextInput_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
