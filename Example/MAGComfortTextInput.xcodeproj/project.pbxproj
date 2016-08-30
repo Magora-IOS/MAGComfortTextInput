@@ -21,8 +21,13 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B91099D2860C7E2F76BC6135 /* Pods_MAGComfortTextInput_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF20CBC951B27331C8BB78A /* Pods_MAGComfortTextInput_Tests.framework */; };
+		C73911281D745C8D00052DF6 /* ViewInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73911271D745C8D00052DF6 /* ViewInputController.m */; };
+		C739112B1D745CB200052DF6 /* ScrollViewInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = C739112A1D745CB200052DF6 /* ScrollViewInputController.m */; };
+		C739112E1D745CC400052DF6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C739112D1D745CC400052DF6 /* TableViewController.m */; };
+		C73911301D745D0B00052DF6 /* ViewInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C739112F1D745D0B00052DF6 /* ViewInputController.xib */; };
+		C73911321D745D1B00052DF6 /* ScrollViewInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73911311D745D1B00052DF6 /* ScrollViewInputController.xib */; };
+		C73911341D745D2500052DF6 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73911331D745D2500052DF6 /* TableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +65,17 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		69830A6DE7FF8FB2B2BC0F90 /* Pods-MAGComfortTextInput_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGComfortTextInput_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MAGComfortTextInput_Example/Pods-MAGComfortTextInput_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B800734C7C418A394D2BB96A /* Pods-MAGComfortTextInput_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGComfortTextInput_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MAGComfortTextInput_Tests/Pods-MAGComfortTextInput_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C39227E4452561AC4F82D6E9 /* MAGComfortTextInput.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MAGComfortTextInput.podspec; path = ../MAGComfortTextInput.podspec; sourceTree = "<group>"; };
+		C73911261D745C8D00052DF6 /* ViewInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewInputController.h; sourceTree = "<group>"; };
+		C73911271D745C8D00052DF6 /* ViewInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewInputController.m; sourceTree = "<group>"; };
+		C73911291D745CB200052DF6 /* ScrollViewInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewInputController.h; sourceTree = "<group>"; };
+		C739112A1D745CB200052DF6 /* ScrollViewInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewInputController.m; sourceTree = "<group>"; };
+		C739112C1D745CC400052DF6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C739112D1D745CC400052DF6 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		C739112F1D745D0B00052DF6 /* ViewInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewInputController.xib; sourceTree = "<group>"; };
+		C73911311D745D1B00052DF6 /* ScrollViewInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewInputController.xib; sourceTree = "<group>"; };
+		C73911331D745D2500052DF6 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		CBF20CBC951B27331C8BB78A /* Pods_MAGComfortTextInput_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAGComfortTextInput_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD37F4625A4AA474CC07BC73 /* Pods-MAGComfortTextInput_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGComfortTextInput_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MAGComfortTextInput_Tests/Pods-MAGComfortTextInput_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,9 +156,17 @@
 			children = (
 				6003F59C195388D20070C39A /* MAGAppDelegate.h */,
 				6003F59D195388D20070C39A /* MAGAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MAGViewController.h */,
 				6003F5A6195388D20070C39A /* MAGViewController.m */,
+				C739112F1D745D0B00052DF6 /* ViewInputController.xib */,
+				C73911261D745C8D00052DF6 /* ViewInputController.h */,
+				C73911271D745C8D00052DF6 /* ViewInputController.m */,
+				C73911311D745D1B00052DF6 /* ScrollViewInputController.xib */,
+				C73911291D745CB200052DF6 /* ScrollViewInputController.h */,
+				C739112A1D745CB200052DF6 /* ScrollViewInputController.m */,
+				C73911331D745D2500052DF6 /* TableViewController.xib */,
+				C739112C1D745CC400052DF6 /* TableViewController.h */,
+				C739112D1D745CC400052DF6 /* TableViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -276,9 +297,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				C73911341D745D2500052DF6 /* TableViewController.xib in Resources */,
+				C73911321D745D1B00052DF6 /* ScrollViewInputController.xib in Resources */,
+				C73911301D745D0B00052DF6 /* ViewInputController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,8 +414,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* MAGAppDelegate.m in Sources */,
+				C739112E1D745CC400052DF6 /* TableViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* MAGViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C739112B1D745CB200052DF6 /* ScrollViewInputController.m in Sources */,
+				C73911281D745C8D00052DF6 /* ViewInputController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,8 +476,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -490,7 +516,6 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

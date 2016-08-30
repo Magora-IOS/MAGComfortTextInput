@@ -8,4 +8,7 @@ target 'MAGComfortTextInput_Example' do
 
     
   end
+
+    pod 'MAGMatveevReusable', :git => 'https://github.com/Magora-IOS/MAGMatveevReusable.git'
+
 end

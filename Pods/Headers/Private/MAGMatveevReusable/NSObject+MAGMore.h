@@ -1,0 +1,1 @@
+../../../MAGMatveevReusable/MAGMatveevReusable/Classes/NSObject+MAGMore.h

@@ -1,0 +1,6 @@
+framework module MAGComfortTextInput {
+  umbrella header "MAGComfortTextInput-umbrella.h"
+
+  export *
+  module * { export * }
+}

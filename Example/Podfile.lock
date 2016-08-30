@@ -1,0 +1,27 @@
+PODS:
+  - MAGComfortTextInput (0.1.0):
+    - MAGMatveevReusable (~> 0.1.0)
+  - MAGMatveevReusable (0.1.0)
+
+DEPENDENCIES:
+  - MAGComfortTextInput (from `../`)
+  - MAGMatveevReusable (from `https://github.com/Magora-IOS/MAGMatveevReusable.git`)
+
+EXTERNAL SOURCES:
+  MAGComfortTextInput:
+    :path: ../
+  MAGMatveevReusable:
+    :git: https://github.com/Magora-IOS/MAGMatveevReusable.git
+
+CHECKOUT OPTIONS:
+  MAGMatveevReusable:
+    :commit: da1c9af9d3b36c0f7394057155ee57459fce74be
+    :git: https://github.com/Magora-IOS/MAGMatveevReusable.git
+
+SPEC CHECKSUMS:
+  MAGComfortTextInput: 8b2a59d08ae3789bd7ca5d9037ce50c330d6b6ab
+  MAGMatveevReusable: 6af1382b68807cf623b81057f4c03b1290137db5
+
+PODFILE CHECKSUM: cc57a7345f0ec82e0e5e39a22da1916744c66082
+
+COCOAPODS: 1.0.1
