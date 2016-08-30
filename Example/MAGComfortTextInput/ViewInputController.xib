@@ -21,45 +21,60 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EmE-QE-UIB">
-                    <rect key="frame" x="20" y="70" width="280" height="90"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="90" id="Pso-vj-YJ1"/>
-                    </constraints>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fEp-st-za8">
-                    <rect key="frame" x="20" y="180" width="280" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6BA-4e-LUK">
-                    <rect key="frame" x="20" y="230" width="280" height="90"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LHR-xo-F9i">
-                    <rect key="frame" x="20" y="340" width="280" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2qW-6g-GaI">
-                    <rect key="frame" x="20" y="378" width="280" height="90"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6c-wd-ZLO">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Press &quot;Next&quot; to center next control" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6c-wd-ZLO">
                     <rect key="frame" x="20" y="20" width="280" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="tap on free space to dismiss keyboard" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EmE-QE-UIB">
+                    <rect key="frame" x="20" y="70" width="280" height="76"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="Pso-vj-YJ1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text Field 2" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fEp-st-za8">
+                    <rect key="frame" x="20" y="166" width="280" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You can tap other control when keyboard is visible. Then it will became centered" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6BA-4e-LUK">
+                    <rect key="frame" x="20" y="216" width="280" height="76"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="textField 3" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LHR-xo-F9i">
+                    <rect key="frame" x="20" y="312" width="280" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="If set focus into last last control, &quot;Next&quot; button will change its name on &quot;Done&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2qW-6g-GaI">
+                    <rect key="frame" x="20" y="350" width="280" height="76"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWl-GC-4NL">
+                    <rect key="frame" x="162" y="442" width="138" height="30"/>
+                    <state key="normal" title="TableViewExample"/>
+                    <connections>
+                        <action selector="tableViewAction" destination="-1" eventType="touchUpInside" id="MhL-ro-tFB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9x8-I7-cmk">
+                    <rect key="frame" x="20" y="442" width="138" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="58a-jX-BNa"/>
+                        <constraint firstAttribute="width" constant="138" id="Yym-1P-X5I"/>
+                    </constraints>
+                    <state key="normal" title="ScrollViewExample"/>
+                    <connections>
+                        <action selector="scrollViewAction" destination="-1" eventType="touchUpInside" id="Zwx-BB-Teq"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -67,8 +82,11 @@
                 <constraint firstItem="LHR-xo-F9i" firstAttribute="width" secondItem="6BA-4e-LUK" secondAttribute="width" id="4g0-Iq-108"/>
                 <constraint firstItem="LHR-xo-F9i" firstAttribute="top" secondItem="6BA-4e-LUK" secondAttribute="bottom" constant="20" id="4wU-sj-me8"/>
                 <constraint firstItem="6BA-4e-LUK" firstAttribute="top" secondItem="fEp-st-za8" secondAttribute="bottom" constant="20" id="8xa-6F-9Pa"/>
+                <constraint firstItem="XWl-GC-4NL" firstAttribute="top" secondItem="2qW-6g-GaI" secondAttribute="bottom" constant="16" id="BVh-0B-Zeg"/>
+                <constraint firstItem="9x8-I7-cmk" firstAttribute="leading" secondItem="2qW-6g-GaI" secondAttribute="leading" id="Ddk-3c-py9"/>
                 <constraint firstItem="6BA-4e-LUK" firstAttribute="width" secondItem="fEp-st-za8" secondAttribute="width" id="H7E-fj-mSW"/>
                 <constraint firstItem="fEp-st-za8" firstAttribute="width" secondItem="EmE-QE-UIB" secondAttribute="width" id="HiF-Ab-kiN"/>
+                <constraint firstItem="XWl-GC-4NL" firstAttribute="height" secondItem="9x8-I7-cmk" secondAttribute="height" id="HkZ-f6-tnB"/>
                 <constraint firstItem="2qW-6g-GaI" firstAttribute="width" secondItem="LHR-xo-F9i" secondAttribute="width" id="MXo-0Q-8ai"/>
                 <constraint firstItem="2qW-6g-GaI" firstAttribute="height" secondItem="6BA-4e-LUK" secondAttribute="height" id="QHq-Te-Tm4"/>
                 <constraint firstItem="2qW-6g-GaI" firstAttribute="centerX" secondItem="LHR-xo-F9i" secondAttribute="centerX" id="QN2-lO-PtN"/>
@@ -77,11 +95,14 @@
                 <constraint firstItem="fEp-st-za8" firstAttribute="top" secondItem="EmE-QE-UIB" secondAttribute="bottom" constant="20" id="ZR2-oH-YmF"/>
                 <constraint firstItem="6BA-4e-LUK" firstAttribute="height" secondItem="EmE-QE-UIB" secondAttribute="height" id="jA7-c5-7n3"/>
                 <constraint firstItem="p6c-wd-ZLO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="jCk-pi-OHv"/>
+                <constraint firstItem="XWl-GC-4NL" firstAttribute="width" secondItem="9x8-I7-cmk" secondAttribute="width" id="kKS-7L-7aG"/>
                 <constraint firstItem="LHR-xo-F9i" firstAttribute="centerX" secondItem="6BA-4e-LUK" secondAttribute="centerX" id="m0B-Ar-YG4"/>
                 <constraint firstItem="p6c-wd-ZLO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="nNL-NN-7PD"/>
                 <constraint firstItem="2qW-6g-GaI" firstAttribute="top" secondItem="LHR-xo-F9i" secondAttribute="bottom" constant="8" id="tmt-RU-n2J"/>
                 <constraint firstItem="EmE-QE-UIB" firstAttribute="width" secondItem="p6c-wd-ZLO" secondAttribute="width" id="vU3-FN-G7K"/>
                 <constraint firstAttribute="trailing" secondItem="p6c-wd-ZLO" secondAttribute="trailing" constant="20" id="vym-Cz-MhB"/>
+                <constraint firstItem="9x8-I7-cmk" firstAttribute="top" secondItem="2qW-6g-GaI" secondAttribute="bottom" constant="16" id="w1R-LV-s5f"/>
+                <constraint firstItem="XWl-GC-4NL" firstAttribute="trailing" secondItem="2qW-6g-GaI" secondAttribute="trailing" id="w4E-ZJ-sRK"/>
                 <constraint firstItem="EmE-QE-UIB" firstAttribute="top" secondItem="p6c-wd-ZLO" secondAttribute="bottom" constant="20" id="wkV-Hp-ded"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

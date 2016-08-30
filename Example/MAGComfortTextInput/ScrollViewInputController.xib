@@ -7,14 +7,111 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScrollViewInputController">
             <connections>
+                <outlet property="scrollView" destination="81y-VQ-QnV" id="ySX-Cs-jyu"/>
+                <outlet property="tf1" destination="rmB-3r-0Cj" id="8il-Tj-n7j"/>
+                <outlet property="tf2" destination="K5F-kb-7hZ" id="bWo-4V-1MN"/>
+                <outlet property="tf3" destination="XVM-4K-yxe" id="Hu2-fc-HiW"/>
+                <outlet property="tv1" destination="T0I-a9-XnC" id="6hs-aS-FpM"/>
+                <outlet property="tv2" destination="Vmw-Pc-y6J" id="wIp-gf-SCk"/>
+                <outlet property="tv3" destination="iLv-Nk-55D" id="FcC-Mb-kJQ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="TtL-wF-gED"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81y-VQ-QnV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVd-9Y-B6R" userLabel="content view">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmB-3r-0Cj">
+                                    <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Now you can scroll it when keyboard is visible, because it is UIScrollView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="T0I-a9-XnC">
+                                    <rect key="frame" x="20" y="70" width="280" height="90"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="90" id="N70-mC-e8W"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K5F-kb-7hZ">
+                                    <rect key="frame" x="20" y="180" width="280" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vmw-Pc-y6J">
+                                    <rect key="frame" x="20" y="230" width="280" height="90"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XVM-4K-yxe">
+                                    <rect key="frame" x="20" y="340" width="280" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iLv-Nk-55D">
+                                    <rect key="frame" x="20" y="390" width="280" height="90"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="XVM-4K-yxe" firstAttribute="centerX" secondItem="Vmw-Pc-y6J" secondAttribute="centerX" id="2sX-01-SLX"/>
+                                <constraint firstAttribute="trailing" secondItem="rmB-3r-0Cj" secondAttribute="trailing" constant="20" id="AOl-5E-0R4"/>
+                                <constraint firstItem="T0I-a9-XnC" firstAttribute="centerX" secondItem="rmB-3r-0Cj" secondAttribute="centerX" id="FUy-gm-oSV"/>
+                                <constraint firstItem="T0I-a9-XnC" firstAttribute="width" secondItem="rmB-3r-0Cj" secondAttribute="width" id="GtI-RB-TcW"/>
+                                <constraint firstItem="iLv-Nk-55D" firstAttribute="top" secondItem="XVM-4K-yxe" secondAttribute="bottom" constant="20" id="LZi-hR-Qg2"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="OQ5-ga-suJ"/>
+                                <constraint firstItem="Vmw-Pc-y6J" firstAttribute="top" secondItem="K5F-kb-7hZ" secondAttribute="bottom" constant="20" id="Qfa-uP-67D"/>
+                                <constraint firstItem="rmB-3r-0Cj" firstAttribute="top" secondItem="rVd-9Y-B6R" secondAttribute="top" constant="20" id="Uit-sH-wkc"/>
+                                <constraint firstItem="K5F-kb-7hZ" firstAttribute="width" secondItem="T0I-a9-XnC" secondAttribute="width" id="XH0-Pw-umE"/>
+                                <constraint firstItem="iLv-Nk-55D" firstAttribute="height" secondItem="T0I-a9-XnC" secondAttribute="height" id="YSH-Te-Hjj"/>
+                                <constraint firstItem="Vmw-Pc-y6J" firstAttribute="height" secondItem="T0I-a9-XnC" secondAttribute="height" id="eQG-Oj-5Xn"/>
+                                <constraint firstItem="Vmw-Pc-y6J" firstAttribute="width" secondItem="K5F-kb-7hZ" secondAttribute="width" id="iZH-2a-ZQ7"/>
+                                <constraint firstItem="K5F-kb-7hZ" firstAttribute="top" secondItem="T0I-a9-XnC" secondAttribute="bottom" constant="20" id="inc-Ie-Nks"/>
+                                <constraint firstItem="Vmw-Pc-y6J" firstAttribute="centerX" secondItem="K5F-kb-7hZ" secondAttribute="centerX" id="mMw-Bh-hGM"/>
+                                <constraint firstItem="XVM-4K-yxe" firstAttribute="width" secondItem="Vmw-Pc-y6J" secondAttribute="width" id="pOt-a8-7H4"/>
+                                <constraint firstItem="rmB-3r-0Cj" firstAttribute="leading" secondItem="rVd-9Y-B6R" secondAttribute="leading" constant="20" id="q8K-B3-Yqb"/>
+                                <constraint firstItem="XVM-4K-yxe" firstAttribute="top" secondItem="Vmw-Pc-y6J" secondAttribute="bottom" constant="20" id="rNo-jp-w8X"/>
+                                <constraint firstItem="K5F-kb-7hZ" firstAttribute="centerX" secondItem="T0I-a9-XnC" secondAttribute="centerX" id="udB-Zx-mAs"/>
+                                <constraint firstItem="iLv-Nk-55D" firstAttribute="centerX" secondItem="XVM-4K-yxe" secondAttribute="centerX" id="us4-Tl-Ldu"/>
+                                <constraint firstItem="T0I-a9-XnC" firstAttribute="top" secondItem="rmB-3r-0Cj" secondAttribute="bottom" constant="20" id="xkb-6g-btf"/>
+                                <constraint firstItem="iLv-Nk-55D" firstAttribute="width" secondItem="XVM-4K-yxe" secondAttribute="width" id="xqG-QJ-Jdm"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rVd-9Y-B6R" firstAttribute="top" secondItem="81y-VQ-QnV" secondAttribute="top" id="1ic-uR-U6W"/>
+                        <constraint firstItem="rVd-9Y-B6R" firstAttribute="height" secondItem="81y-VQ-QnV" secondAttribute="height" id="Fiz-ch-n0h"/>
+                        <constraint firstItem="rVd-9Y-B6R" firstAttribute="width" secondItem="81y-VQ-QnV" secondAttribute="width" id="Hnr-GF-br8"/>
+                        <constraint firstItem="rVd-9Y-B6R" firstAttribute="leading" secondItem="81y-VQ-QnV" secondAttribute="leading" id="OcG-zn-Sld"/>
+                        <constraint firstAttribute="bottom" secondItem="rVd-9Y-B6R" secondAttribute="bottom" id="YLZ-GB-ial"/>
+                        <constraint firstAttribute="trailing" secondItem="rVd-9Y-B6R" secondAttribute="trailing" id="vF7-h4-wn3"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="81y-VQ-QnV" secondAttribute="bottom" id="MKF-M5-gWV"/>
+                <constraint firstItem="81y-VQ-QnV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wah-JD-s0Z"/>
+                <constraint firstItem="81y-VQ-QnV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hOq-hf-UYf"/>
+                <constraint firstAttribute="trailing" secondItem="81y-VQ-QnV" secondAttribute="trailing" id="xNR-t4-OBd"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="236" y="166"/>
         </view>
     </objects>
 </document>

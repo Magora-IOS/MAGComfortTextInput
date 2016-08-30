@@ -11,6 +11,7 @@
 #import "MAGViewComfortTextInput.h"
 //#import "MAGComfortTextInput_umbrella.h"
 #import "UIView+MAGMore.h"
+#import "ScrollViewInputController.h"
 
 @interface ViewInputController ()
 
@@ -30,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"ViewInputController";
     self.automaticallyAdjustsScrollViewInsets = NO;
 //    self.wantsFullScreenLayout
     
@@ -40,7 +42,7 @@
     [super viewDidAppear:animated];
 
     [self configureTextFieldsForConvinientUsing];
-    [self.tf2 becomeFirstResponder];
+    [self.tf1 becomeFirstResponder];
 }
 
 - (MAGViewComfortTextInput *)configureTextFieldsForConvinientUsing {
@@ -56,5 +58,16 @@
     };
     return _comfortTextInput;
 }
+
+
+- (IBAction)scrollViewAction {
+    ScrollViewInputController *vc = [[ScrollViewInputController alloc] initWithNibName:@"ScrollViewInputController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)tableViewAction {
+    
+}
+
 
 @end
