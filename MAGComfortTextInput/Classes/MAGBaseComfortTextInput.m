@@ -14,9 +14,15 @@
 - (instancetype)initWithOrderedTextInputControls:(NSArray *)orderedTextInputControls withOwnerView:(UIView *)ownerView {
     self = [super init];
     if (self) {
+        [ownerView mag_relayout];
+        for (NSInteger i = 0; i < orderedTextInputControls.count; ++i) {
+            UIView *control = orderedTextInputControls[i];
+            [control mag_relayout];
+        }
+        
         self.ownerView = ownerView;
-        NSLog(@"START SCREEN FRAMEEEEE %@",NSStringFromCGRect([ownerView mag_viewFrameAtScreenCoordinates]));
-        _ownerViewStartFrame = [ownerView mag_viewFrameAtScreenCoordinates];//ownerView.frame;
+        _ownerViewStartFrame = ownerView.frame;
+        _ownerViewScreenStartFrame = [ownerView mag_viewFrameAtScreenCoordinates];
         _hideKeyboardOnTapOutside = YES;
         for (NSInteger i = 0; i < orderedTextInputControls.count - 1; ++i) {
             id<UITextInputTraits> control = orderedTextInputControls[i];

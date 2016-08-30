@@ -16,6 +16,7 @@ typedef void(^LastTextInputControlDidEndEditingBlock)(UIView *textInputControl);
 @property (strong, nonatomic) NSArray *orderedTextInputControls;
 @property (strong, nonatomic) UIView *ownerView;
 @property (assign, nonatomic, readonly) CGRect ownerViewStartFrame;
+@property (assign, nonatomic, readonly) CGRect ownerViewScreenStartFrame;
 
 @property (nonatomic) BOOL hideKeyboardOnTapOutside;
 

@@ -39,15 +39,16 @@
 
 - (void)textInputControlWillBeginEditing:(UIView *)textInputControl {
     CGFloat mainScreenHeight = [UIScreen mainScreen].bounds.size.height;
-    NSLog(@"2222 START SCREEN FRAMEEEEE %@",NSStringFromCGPoint([self.ownerView mag_viewOriginAtScreenCoordinates]));
     CGFloat textFieldScreenYPosition = [textInputControl mag_viewOriginAtScreenCoordinates].y;
     CGFloat keyboardHeight = [[MAGKeyboardInfo sharedInstance] keyboardHeight];
     
     //      will center text field on free space
-    CGFloat freeHeightFromOwnerViewTopToKeyboardTop = mainScreenHeight - keyboardHeight;
-    CGFloat verticallyCenteredTextFieldYinScreenCoordinates = (freeHeightFromOwnerViewTopToKeyboardTop / 2.0) - (textInputControl.height / 2.0);
+    CGFloat freeHeightFromScreenTopToKeyboardTop = mainScreenHeight - keyboardHeight;
+    CGFloat freeHeightFromOwnerViewTopScreenCoordinatesToKeyboardTop = freeHeightFromScreenTopToKeyboardTop - self.ownerViewScreenStartFrame.origin.y;
     
-    CGFloat neededOwnerViewShift = verticallyCenteredTextFieldYinScreenCoordinates - textFieldScreenYPosition + self.ownerViewStartFrame.origin.y;
+    CGFloat verticallyCenteredTextFieldYinScreenCoordinates = (freeHeightFromOwnerViewTopScreenCoordinatesToKeyboardTop / 2.0) - (textInputControl.height / 2.0);
+    
+    CGFloat neededOwnerViewShift = verticallyCenteredTextFieldYinScreenCoordinates - textFieldScreenYPosition + self.ownerViewScreenStartFrame.origin.y;
     
     CGFloat ownerViewNewTopY = self.ownerView.y + neededOwnerViewShift;
     if (ownerViewNewTopY > self.ownerViewStartFrame.origin.y) {
@@ -55,12 +56,18 @@
     }
     CGFloat ownerViewNewBottomY = ownerViewNewTopY + self.ownerView.height;
     
-    CGFloat maximumOwnerViewNewBottomY = freeHeightFromOwnerViewTopToKeyboardTop;
+    CGFloat maximumOwnerViewNewBottomY = freeHeightFromScreenTopToKeyboardTop;
     if (ownerViewNewBottomY < maximumOwnerViewNewBottomY) {
         ownerViewNewTopY = maximumOwnerViewNewBottomY - self.ownerView.height;
     }
     
     [self setOwnerViewYanimated:ownerViewNewTopY];
+    NSLog(@"freeHeightFromScreenTopToKeyboardTop %@",@(freeHeightFromScreenTopToKeyboardTop));
+    NSLog(@"freeHeightFromOwnerViewTopScreenCoordinatesToKeyboardTop %@",@(freeHeightFromOwnerViewTopScreenCoordinatesToKeyboardTop));
+    NSLog(@"verticallyCenteredTextFieldYinScreenCoordinates %@",@(verticallyCenteredTextFieldYinScreenCoordinates));
+    NSLog(@"neededOwnerViewShift %@",@(neededOwnerViewShift));
+    NSLog(@"neededOwnerViewShift %@",@(neededOwnerViewShift));
+    NSLog(@"ownerViewNewTopY %@",@(ownerViewNewTopY));
 }
 
 - (BOOL)textInputControlShouldReturn:(UIView *)textInputControl {
