@@ -32,11 +32,7 @@
     [super viewDidLoad];
     
     self.title = @"ScrollViewInputController";
-
     self.automaticallyAdjustsScrollViewInsets = NO;
-    //    self.wantsFullScreenLayout
-    
-    //    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -52,10 +48,8 @@
     }
     
     _comfortTextInput = [[MAGScrollViewComfortTextInput alloc] initWithOrderedTextInputControls:@[self.tf1,self.tv1,self.tf2,self.tv2,self.tf3,self.tv3 ] withOwnerView:self.view withScrollViewInsideOwnerViewWhereTextFieldsLocated:self.scrollView];
-    //    @weakify(self);
     _comfortTextInput.lastTextInputControlDidEndEditingBlock = ^(UIView *textInputControl) {
-        //        @strongify(self);
-        //        [self loginAction];
+    
     };
     return _comfortTextInput;
 }

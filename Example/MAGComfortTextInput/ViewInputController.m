@@ -34,9 +34,6 @@
     
     self.title = @"ViewInputController";
     self.automaticallyAdjustsScrollViewInsets = NO;
-//    self.wantsFullScreenLayout
-    
-//    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -52,10 +49,11 @@
     }
     
     _comfortTextInput = [[MAGViewComfortTextInput alloc] initWithOrderedTextInputControls:@[self.tf1,self.tv1,self.tf2,self.tv2,self.tf3,self.tv3 ] withOwnerView:self.view];
-//    @weakify(self);
+    _comfortTextInput.textInputControlDidEndEditingBlock = ^(UIView *textInputControl) {
+        NSLog(@"DO SOMETHING");
+    };
     _comfortTextInput.lastTextInputControlDidEndEditingBlock = ^(UIView *textInputControl) {
-//        @strongify(self);
-//        [self loginAction];
+        NSLog(@"DO SOMETHING ON FINISH");
     };
     return _comfortTextInput;
 }

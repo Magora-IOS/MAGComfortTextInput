@@ -14,7 +14,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* MAGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* MAGAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* MAGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* MAGViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -33,6 +32,7 @@
 		C739115D1D75A39E00052DF6 /* TableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C739115C1D75A39E00052DF6 /* TableManager.m */; };
 		C73911611D75A3CC00052DF6 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = C73911601D75A3CC00052DF6 /* Cell.m */; };
 		C73911631D75A40200052DF6 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73911621D75A40200052DF6 /* Cell.xib */; };
+		C78D6AE41D76E5DA00F86C0B /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = C78D6AE31D76E5DA00F86C0B /* NOTICE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,6 @@
 		6003F59B195388D20070C39A /* MAGComfortTextInput-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MAGComfortTextInput-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* MAGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAGAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* MAGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAGAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* MAGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAGViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* MAGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAGViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* MAGComfortTextInput_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAGComfortTextInput_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -90,6 +88,7 @@
 		C739115F1D75A3CC00052DF6 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
 		C73911601D75A3CC00052DF6 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		C73911621D75A40200052DF6 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		C78D6AE31D76E5DA00F86C0B /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NOTICE; path = ../NOTICE; sourceTree = "<group>"; };
 		CBF20CBC951B27331C8BB78A /* Pods_MAGComfortTextInput_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAGComfortTextInput_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD37F4625A4AA474CC07BC73 /* Pods-MAGComfortTextInput_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGComfortTextInput_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MAGComfortTextInput_Tests/Pods-MAGComfortTextInput_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,8 +169,6 @@
 			children = (
 				6003F59C195388D20070C39A /* MAGAppDelegate.h */,
 				6003F59D195388D20070C39A /* MAGAppDelegate.m */,
-				6003F5A5195388D20070C39A /* MAGViewController.h */,
-				6003F5A6195388D20070C39A /* MAGViewController.m */,
 				C739112F1D745D0B00052DF6 /* ViewInputController.xib */,
 				C73911261D745C8D00052DF6 /* ViewInputController.h */,
 				C73911271D745C8D00052DF6 /* ViewInputController.m */,
@@ -230,6 +227,7 @@
 				C39227E4452561AC4F82D6E9 /* MAGComfortTextInput.podspec */,
 				2ED5382F0A8C0FAB4F7F6589 /* README.md */,
 				00B597D8540FACE9224F53BC /* LICENSE */,
+				C78D6AE31D76E5DA00F86C0B /* NOTICE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -329,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				C78D6AE41D76E5DA00F86C0B /* NOTICE in Resources */,
 				C73911631D75A40200052DF6 /* Cell.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				C73911341D745D2500052DF6 /* TableViewInputController.xib in Resources */,
@@ -449,7 +448,6 @@
 				6003F59E195388D20070C39A /* MAGAppDelegate.m in Sources */,
 				C73911591D75A2FA00052DF6 /* RCTableManager.m in Sources */,
 				C739112E1D745CC400052DF6 /* TableViewInputController.m in Sources */,
-				6003F5A7195388D20070C39A /* MAGViewController.m in Sources */,
 				C73911611D75A3CC00052DF6 /* Cell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				C739115A1D75A2FA00052DF6 /* RCTableSection.m in Sources */,
