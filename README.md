@@ -10,7 +10,7 @@ Possibilities:
   2 Dismiss by click on empty area
   3 Action by Next / Done button's pressing
 
-![](http://i.imgur.com/YRjvBwf.png)
+![](https://github.com/Magora-IOS/MAGComfortTextInput/blob/master/Preview/MAGComfortTextInput.gif)
 
 ## Example
 
