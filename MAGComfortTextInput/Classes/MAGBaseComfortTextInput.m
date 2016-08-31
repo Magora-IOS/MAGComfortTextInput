@@ -24,23 +24,7 @@
         _ownerViewStartFrame = ownerView.frame;
         _ownerViewScreenStartFrame = [ownerView mag_viewFrameAtScreenCoordinates];
         _hideKeyboardOnTapOutside = YES;
-        for (NSInteger i = 0; i < orderedTextInputControls.count - 1; ++i) {
-            id<UITextInputTraits> control = orderedTextInputControls[i];
-            control.returnKeyType = UIReturnKeyNext;
-        }
-        id<UITextInputTraits> lastControl = orderedTextInputControls[orderedTextInputControls.count - 1];
-        lastControl.returnKeyType = UIReturnKeyDone;
-        
-        for (id currentControl in orderedTextInputControls) {
-            if ([currentControl isKindOfClass:[UITextField class]]) {
-                UITextField *textField = currentControl;
-                textField.delegate = self;
-            } else if ([currentControl isKindOfClass:[UITextView class]]) {
-                UITextView *textView = currentControl;
-                textView.delegate = self;
-            }
-        }
-        self.orderedTextInputControls = orderedTextInputControls;
+        [self updateOrderedTextInputControls:orderedTextInputControls];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHideAction) name:UIKeyboardWillHideNotification object:nil];
         
         _tapDetector = [MAGFreeSpaceLongTouchDetector new];
@@ -73,6 +57,26 @@
 
     }
     return self;
+}
+
+- (void)updateOrderedTextInputControls:(NSArray *)orderedTextInputControls {
+    for (NSInteger i = 0; i < orderedTextInputControls.count - 1; ++i) {
+        id<UITextInputTraits> control = orderedTextInputControls[i];
+        control.returnKeyType = UIReturnKeyNext;
+    }
+    id<UITextInputTraits> lastControl = orderedTextInputControls[orderedTextInputControls.count - 1];
+    lastControl.returnKeyType = UIReturnKeyDone;
+    
+    for (id currentControl in orderedTextInputControls) {
+        if ([currentControl isKindOfClass:[UITextField class]]) {
+            UITextField *textField = currentControl;
+            textField.delegate = self;
+        } else if ([currentControl isKindOfClass:[UITextView class]]) {
+            UITextView *textView = currentControl;
+            textView.delegate = self;
+        }
+    }
+    self.orderedTextInputControls = orderedTextInputControls;
 }
 
 - (void)resetWithResignFirstResponder {

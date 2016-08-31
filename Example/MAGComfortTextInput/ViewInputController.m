@@ -12,6 +12,7 @@
 //#import "MAGComfortTextInput_umbrella.h"
 #import "UIView+MAGMore.h"
 #import "ScrollViewInputController.h"
+#import "TableViewInputController.h"
 
 @interface ViewInputController ()
 
@@ -66,7 +67,8 @@
 }
 
 - (IBAction)tableViewAction {
-    
+    TableViewInputController *vc = [[TableViewInputController alloc] initWithNibName:@"TableViewInputController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

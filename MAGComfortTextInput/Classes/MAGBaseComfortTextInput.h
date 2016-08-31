@@ -27,6 +27,7 @@ typedef void(^LastTextInputControlDidEndEditingBlock)(UIView *textInputControl);
 - (instancetype)initWithOrderedTextInputControls:(NSArray *)orderedTextInputControls withOwnerView:(UIView *)ownerView;
 - (void)resetWithResignFirstResponder;
 
+- (void)updateOrderedTextInputControls:(NSArray *)orderedTextInputControls;
 
 - (void)turnToInitialState;
 - (void)setOwnerViewYanimated:(CGFloat)newY;

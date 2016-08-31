@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 
+#import "MAGCommonDefines.h"
 #import "NSObject+MAGMore.h"
 #import "UIView+MAGMore.h"
 

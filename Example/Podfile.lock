@@ -1,9 +1,45 @@
 PODS:
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - libextobjc/NSInvocation+EXT (= 0.4.1)
+    - libextobjc/NSMethodSignature+EXT (= 0.4.1)
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSInvocation+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSMethodSignature+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
   - MAGComfortTextInput (0.1.0):
     - MAGMatveevReusable (~> 0.1.0)
-  - MAGMatveevReusable (0.1.0)
+  - MAGMatveevReusable (0.1.3)
 
 DEPENDENCIES:
+  - libextobjc (~> 0.4.1)
   - MAGComfortTextInput (from `../`)
   - MAGMatveevReusable (from `https://github.com/Magora-IOS/MAGMatveevReusable.git`)
 
@@ -15,13 +51,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MAGMatveevReusable:
-    :commit: da1c9af9d3b36c0f7394057155ee57459fce74be
+    :commit: 16186900ccfcd8710d55d50c49a96c72816cf8e1
     :git: https://github.com/Magora-IOS/MAGMatveevReusable.git
 
 SPEC CHECKSUMS:
-  MAGComfortTextInput: 8b2a59d08ae3789bd7ca5d9037ce50c330d6b6ab
-  MAGMatveevReusable: 6af1382b68807cf623b81057f4c03b1290137db5
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  MAGComfortTextInput: 419a4f75537c169dc3cda024761b01e738beff08
+  MAGMatveevReusable: eec90a0d85889e1a4f7c2b2f8f9bf27915f9019d
 
-PODFILE CHECKSUM: cc57a7345f0ec82e0e5e39a22da1916744c66082
+PODFILE CHECKSUM: a1dde56f8a685568cbb61976d802e11c98af7950
 
 COCOAPODS: 1.0.1

@@ -24,10 +24,15 @@
 		B91099D2860C7E2F76BC6135 /* Pods_MAGComfortTextInput_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF20CBC951B27331C8BB78A /* Pods_MAGComfortTextInput_Tests.framework */; };
 		C73911281D745C8D00052DF6 /* ViewInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73911271D745C8D00052DF6 /* ViewInputController.m */; };
 		C739112B1D745CB200052DF6 /* ScrollViewInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = C739112A1D745CB200052DF6 /* ScrollViewInputController.m */; };
-		C739112E1D745CC400052DF6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C739112D1D745CC400052DF6 /* TableViewController.m */; };
+		C739112E1D745CC400052DF6 /* TableViewInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = C739112D1D745CC400052DF6 /* TableViewInputController.m */; };
 		C73911301D745D0B00052DF6 /* ViewInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C739112F1D745D0B00052DF6 /* ViewInputController.xib */; };
 		C73911321D745D1B00052DF6 /* ScrollViewInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73911311D745D1B00052DF6 /* ScrollViewInputController.xib */; };
-		C73911341D745D2500052DF6 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73911331D745D2500052DF6 /* TableViewController.xib */; };
+		C73911341D745D2500052DF6 /* TableViewInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73911331D745D2500052DF6 /* TableViewInputController.xib */; };
+		C73911591D75A2FA00052DF6 /* RCTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C73911561D75A2FA00052DF6 /* RCTableManager.m */; };
+		C739115A1D75A2FA00052DF6 /* RCTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = C73911581D75A2FA00052DF6 /* RCTableSection.m */; };
+		C739115D1D75A39E00052DF6 /* TableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C739115C1D75A39E00052DF6 /* TableManager.m */; };
+		C73911611D75A3CC00052DF6 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = C73911601D75A3CC00052DF6 /* Cell.m */; };
+		C73911631D75A40200052DF6 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73911621D75A40200052DF6 /* Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,11 +76,20 @@
 		C73911271D745C8D00052DF6 /* ViewInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewInputController.m; sourceTree = "<group>"; };
 		C73911291D745CB200052DF6 /* ScrollViewInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewInputController.h; sourceTree = "<group>"; };
 		C739112A1D745CB200052DF6 /* ScrollViewInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewInputController.m; sourceTree = "<group>"; };
-		C739112C1D745CC400052DF6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		C739112D1D745CC400052DF6 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		C739112C1D745CC400052DF6 /* TableViewInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewInputController.h; sourceTree = "<group>"; };
+		C739112D1D745CC400052DF6 /* TableViewInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewInputController.m; sourceTree = "<group>"; };
 		C739112F1D745D0B00052DF6 /* ViewInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewInputController.xib; sourceTree = "<group>"; };
 		C73911311D745D1B00052DF6 /* ScrollViewInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewInputController.xib; sourceTree = "<group>"; };
-		C73911331D745D2500052DF6 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		C73911331D745D2500052DF6 /* TableViewInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewInputController.xib; sourceTree = "<group>"; };
+		C73911551D75A2FA00052DF6 /* RCTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTableManager.h; sourceTree = "<group>"; };
+		C73911561D75A2FA00052DF6 /* RCTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTableManager.m; sourceTree = "<group>"; };
+		C73911571D75A2FA00052DF6 /* RCTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTableSection.h; sourceTree = "<group>"; };
+		C73911581D75A2FA00052DF6 /* RCTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTableSection.m; sourceTree = "<group>"; };
+		C739115B1D75A39E00052DF6 /* TableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableManager.h; sourceTree = "<group>"; };
+		C739115C1D75A39E00052DF6 /* TableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableManager.m; sourceTree = "<group>"; };
+		C739115F1D75A3CC00052DF6 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		C73911601D75A3CC00052DF6 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		C73911621D75A40200052DF6 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		CBF20CBC951B27331C8BB78A /* Pods_MAGComfortTextInput_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAGComfortTextInput_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD37F4625A4AA474CC07BC73 /* Pods-MAGComfortTextInput_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGComfortTextInput_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MAGComfortTextInput_Tests/Pods-MAGComfortTextInput_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,9 +178,15 @@
 				C73911311D745D1B00052DF6 /* ScrollViewInputController.xib */,
 				C73911291D745CB200052DF6 /* ScrollViewInputController.h */,
 				C739112A1D745CB200052DF6 /* ScrollViewInputController.m */,
-				C73911331D745D2500052DF6 /* TableViewController.xib */,
-				C739112C1D745CC400052DF6 /* TableViewController.h */,
-				C739112D1D745CC400052DF6 /* TableViewController.m */,
+				C73911331D745D2500052DF6 /* TableViewInputController.xib */,
+				C739112C1D745CC400052DF6 /* TableViewInputController.h */,
+				C739112D1D745CC400052DF6 /* TableViewInputController.m */,
+				C739115B1D75A39E00052DF6 /* TableManager.h */,
+				C739115C1D75A39E00052DF6 /* TableManager.m */,
+				C739115F1D75A3CC00052DF6 /* Cell.h */,
+				C73911601D75A3CC00052DF6 /* Cell.m */,
+				C73911621D75A40200052DF6 /* Cell.xib */,
+				C739115E1D75A3A900052DF6 /* TableManager */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -212,6 +232,17 @@
 				00B597D8540FACE9224F53BC /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		C739115E1D75A3A900052DF6 /* TableManager */ = {
+			isa = PBXGroup;
+			children = (
+				C73911551D75A2FA00052DF6 /* RCTableManager.h */,
+				C73911561D75A2FA00052DF6 /* RCTableManager.m */,
+				C73911571D75A2FA00052DF6 /* RCTableSection.h */,
+				C73911581D75A2FA00052DF6 /* RCTableSection.m */,
+			);
+			name = TableManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,8 +329,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				C73911631D75A40200052DF6 /* Cell.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-				C73911341D745D2500052DF6 /* TableViewController.xib in Resources */,
+				C73911341D745D2500052DF6 /* TableViewInputController.xib in Resources */,
 				C73911321D745D1B00052DF6 /* ScrollViewInputController.xib in Resources */,
 				C73911301D745D0B00052DF6 /* ViewInputController.xib in Resources */,
 			);
@@ -413,10 +445,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C739115D1D75A39E00052DF6 /* TableManager.m in Sources */,
 				6003F59E195388D20070C39A /* MAGAppDelegate.m in Sources */,
-				C739112E1D745CC400052DF6 /* TableViewController.m in Sources */,
+				C73911591D75A2FA00052DF6 /* RCTableManager.m in Sources */,
+				C739112E1D745CC400052DF6 /* TableViewInputController.m in Sources */,
 				6003F5A7195388D20070C39A /* MAGViewController.m in Sources */,
+				C73911611D75A3CC00052DF6 /* Cell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C739115A1D75A2FA00052DF6 /* RCTableSection.m in Sources */,
 				C739112B1D745CB200052DF6 /* ScrollViewInputController.m in Sources */,
 				C73911281D745C8D00052DF6 /* ViewInputController.m in Sources */,
 			);
