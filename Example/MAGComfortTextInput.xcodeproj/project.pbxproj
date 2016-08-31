@@ -33,6 +33,7 @@
 		C73911611D75A3CC00052DF6 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = C73911601D75A3CC00052DF6 /* Cell.m */; };
 		C73911631D75A40200052DF6 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73911621D75A40200052DF6 /* Cell.xib */; };
 		C78D6AE41D76E5DA00F86C0B /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = C78D6AE31D76E5DA00F86C0B /* NOTICE */; };
+		C78D6AE71D77083300F86C0B /* MAGComfortTextInput.gif in Resources */ = {isa = PBXBuildFile; fileRef = C78D6AE61D77083300F86C0B /* MAGComfortTextInput.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		C73911601D75A3CC00052DF6 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		C73911621D75A40200052DF6 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		C78D6AE31D76E5DA00F86C0B /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NOTICE; path = ../NOTICE; sourceTree = "<group>"; };
+		C78D6AE61D77083300F86C0B /* MAGComfortTextInput.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MAGComfortTextInput.gif; sourceTree = "<group>"; };
 		CBF20CBC951B27331C8BB78A /* Pods_MAGComfortTextInput_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAGComfortTextInput_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD37F4625A4AA474CC07BC73 /* Pods-MAGComfortTextInput_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAGComfortTextInput_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MAGComfortTextInput_Tests/Pods-MAGComfortTextInput_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				C78D6AE51D77083300F86C0B /* Preview */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for MAGComfortTextInput */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -243,6 +246,15 @@
 			name = TableManager;
 			sourceTree = "<group>";
 		};
+		C78D6AE51D77083300F86C0B /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				C78D6AE61D77083300F86C0B /* MAGComfortTextInput.gif */,
+			);
+			name = Preview;
+			path = ../Preview;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -333,6 +345,7 @@
 				C73911341D745D2500052DF6 /* TableViewInputController.xib in Resources */,
 				C73911321D745D1B00052DF6 /* ScrollViewInputController.xib in Resources */,
 				C73911301D745D0B00052DF6 /* ViewInputController.xib in Resources */,
+				C78D6AE71D77083300F86C0B /* MAGComfortTextInput.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
