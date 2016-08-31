@@ -1,14 +1,15 @@
 # MAGComfortTextInput
 It makes using of UITextField, UITextView much easier by taking up keyboard's displaying behaviour
 
-Supports parent views:
-  UIView
-  UIScrollView
+Supported parent views:
+*  UIView
+*  UIScrollView (and subclasses, i.e. UITableView)
   
 Possibilities:
-  1 Centering of active UITextField / UITextView (aka "InputField") on free space between top of screen and top of appeared keyboard.
-  2 Dismiss by click on empty area
-  3 Action by Next / Done button's pressing
+*  1 Centering of active UITextField / UITextView (aka "InputField") on free space between top of screen and top of appeared keyboard.
+*  2 Dismiss by click on empty area
+*  3 Action by Next / Done button's pressing
+*  4 Easy for addition customization
 
 ![](https://github.com/Magora-IOS/MAGComfortTextInput/blob/master/Preview/MAGComfortTextInput.gif)
 
