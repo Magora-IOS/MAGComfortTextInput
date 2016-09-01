@@ -51,6 +51,12 @@ For example, you have 3 UITextField and 3 UITextView on your UIView:
     [self.tf1 becomeFirstResponder];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self.comfortTextInput resetWithResignFirstResponder];
+}
+
 - (MAGViewComfortTextInput *)configureTextFieldsForConvinientUsing {
     if (_comfortTextInput) {
         return _comfortTextInput;
