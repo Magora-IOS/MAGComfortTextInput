@@ -46,6 +46,12 @@
     [[self.comfortTextInput.orderedTextInputControls firstObject] becomeFirstResponder];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self.comfortTextInput resetWithResignFirstResponder];
+}
+
 - (MAGScrollViewComfortTextInput *)configureTextFieldsForConvinientUsing {
     NSArray *cells = [self.tm.tableView visibleCells];
     NSArray *textFields = [cells valueForKeyPath:@"tf"];

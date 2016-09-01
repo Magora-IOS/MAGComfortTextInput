@@ -42,6 +42,12 @@
     [self.tf1 becomeFirstResponder];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self.comfortTextInput resetWithResignFirstResponder];
+}
+
 - (MAGScrollViewComfortTextInput *)configureTextFieldsForConvinientUsing {
     if (_comfortTextInput) {
         return _comfortTextInput;

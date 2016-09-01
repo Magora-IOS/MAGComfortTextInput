@@ -2,7 +2,7 @@
 #import "MAGBaseComfortTextInput.h"
 
 /**!     @class Class for comfortable input data into textfields which located at scrollview which located on view (or any subview) of some viewcontroller
-         @warn Not forget to init KeyboardInfo. See KeyboardInfo for it
+         @warn YOU SHOULD TO INIT KeyboardInfo in AppDelegate! See KeyboardInfo for it
  */
 @interface MAGScrollViewComfortTextInput : MAGBaseComfortTextInput
 

@@ -9,7 +9,7 @@ typedef void(^LastTextInputControlDidEndEditingBlock)(UIView *textInputControl);
 
 /**
         @warn !!! you should create it single time per view controller (but you may have some BaseComfortTextInput's per view controller - so init every of it single time for avoid very strange bugs (not settable cursor at textfields, captured previous created BaseComfortTextInput, or not displaying magnifier by long tap at this textfields, etc)
-        @warn you should init it when frame of your ownerView calculated and was set (so it located at expected location for example under status + navigation bars). Else behavior of it will wrong. So you should init it after status + navigation bars layouted yet (for example at first viewDidLayoutSubviews or viewDidAppear)
+        @warn you should init it when frame of your ownerView calculated and was set (so it located at expected location for example under status + navigation bars). Else behavior of it will wrong. So you should init it after status + navigation bars layouted yet (in viewDidAppear)
  */
 @interface MAGBaseComfortTextInput : NSObject <UITextFieldDelegate, UITextViewDelegate>
 
@@ -29,6 +29,7 @@ typedef void(^LastTextInputControlDidEndEditingBlock)(UIView *textInputControl);
 
 - (void)updateOrderedTextInputControls:(NSArray *)orderedTextInputControls;
 
+//      for using just from subclasses:
 - (void)turnToInitialState;
 - (void)setOwnerViewYanimated:(CGFloat)newY;
 - (void)performActionsAnimated:(dispatch_block_t)block;

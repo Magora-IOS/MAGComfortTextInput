@@ -4,9 +4,9 @@
 
 @interface MAGScrollViewComfortTextInput ()
 
-@property (assign, nonatomic) CGSize scrollViewStartContentSize;
+@property (assign, nonatomic) UIEdgeInsets scrollViewStartContentInset;
 @property (weak, nonatomic) UIScrollView *scrollView;
-@property (assign, nonatomic) BOOL scrollViewContentSizeChanged;
+@property (assign, nonatomic) BOOL scrollViewContentInsetChanged;
 
 @end
 
@@ -15,7 +15,7 @@
 - (instancetype)initWithOrderedTextInputControls:(NSArray *)orderedTextInputControls withOwnerView:(UIView *)ownerView withScrollViewInsideOwnerViewWhereTextFieldsLocated:(UIScrollView *)scrollView {
     self = [super initWithOrderedTextInputControls:orderedTextInputControls withOwnerView:ownerView];
     if (self) {
-        _scrollViewStartContentSize = scrollView.contentSize;
+        _scrollViewStartContentInset = scrollView.contentInset;
         _scrollView = scrollView;
     }
     return self;
@@ -23,8 +23,8 @@
 
 - (void)resetWithResignFirstResponder {
     [super resetWithResignFirstResponder];
-    _scrollView.contentSize = _scrollViewStartContentSize;
-    _scrollViewContentSizeChanged = NO;
+    [self setScrollViewContentInset:self.scrollViewStartContentInset];
+    self.scrollViewContentInsetChanged = NO;
 }
 
 - (void)setScrollViewContentOffsetY:(CGFloat)newY {
@@ -38,9 +38,14 @@
     [super turnToInitialState];
     __typeof__(self) __weak wself = self;
     [self performActionsAnimated:^{
-        wself.scrollView.contentSize = _scrollViewStartContentSize;
-        wself.scrollViewContentSizeChanged = NO;
+        [self setScrollViewContentInset:self.scrollViewStartContentInset];
+        wself.scrollViewContentInsetChanged = NO;
     }];
+}
+
+- (void)setScrollViewContentInset:(UIEdgeInsets)inset {
+    self.scrollView.contentInset = inset;
+    self.scrollView.scrollIndicatorInsets = inset;
 }
 
 #pragma mark - UITextFieldDelegate DELEGATE
@@ -66,16 +71,16 @@
             result = YES;
             [self turnToInitialState];
             [textField resignFirstResponder];
-            if (_scrollViewContentSizeChanged) {
+            if (self.scrollViewContentInsetChanged) {
                 [self performActionsAnimated:^{
-                    _scrollView.contentSize = _scrollViewStartContentSize;
+                    [self setScrollViewContentInset:self.scrollViewStartContentInset];
                 }];
-                _scrollViewContentSizeChanged = NO;
+                self.scrollViewContentInsetChanged = NO;
             }
         }
     }
     CGFloat textFieldScreenYPosition = [textField mag_viewOriginAtScreenCoordinates].y;
-    NSLog(@"after textField screen coordinates %f",textFieldScreenYPosition);
+    //NSLog(@"after textField screen coordinates %f",textFieldScreenYPosition);
     
     return result;
 }
@@ -111,18 +116,18 @@
     [self setOwnerViewYanimated:ownerViewNewTopY];//        set y of owner view so, that scrollView will has Y screen coordinate as 0 (that is, we can see top of scrollView frame)
     
     CGFloat increaseContentHeightForScrollView = _scrollView.height - freeHeightFromOwnerViewTopToKeyboardTop;
-    if (!_scrollViewContentSizeChanged) {
+    if (!self.scrollViewContentInsetChanged) {
         if (increaseContentHeightForScrollView > 0) {
-            CGSize contentSize = _scrollView.contentSize;
-            contentSize.height += increaseContentHeightForScrollView;
-            _scrollView.contentSize = contentSize;
-            _scrollViewContentSizeChanged = YES;
+            UIEdgeInsets newContentInset = self.scrollView.contentInset;
+            newContentInset.bottom += increaseContentHeightForScrollView;
+            [self setScrollViewContentInset:newContentInset];
+            self.scrollViewContentInsetChanged = YES;
         }
     }
     
     CGFloat textFieldYtranslatedToScrollView = [textInputControl mag_viewOriginAtViewCoordinates:_scrollView].y;//     bcs it may be textfield inside UITableViewCell, so weneed translate coordinates of it
     CGFloat newContentOffsetY = textFieldYtranslatedToScrollView - (freeHeightFromOwnerViewTopToKeyboardTop/2.0) + (textInputControl.height / 2.0);
-    CGFloat maximumContentOffsetY = _scrollView.contentSize.height - _scrollView.height;
+    CGFloat maximumContentOffsetY = (_scrollView.contentSize.height + _scrollView.contentInset.bottom) - _scrollView.height;
     if (newContentOffsetY < 0) {
         newContentOffsetY = 0;
     }
@@ -150,16 +155,16 @@
             result = YES;
             [self turnToInitialState];
             [textInputControl resignFirstResponder];
-            if (_scrollViewContentSizeChanged) {
+            if (self.scrollViewContentInsetChanged) {
                 [self performActionsAnimated:^{
-                    _scrollView.contentSize = _scrollViewStartContentSize;
+                    [self setScrollViewContentInset:self.scrollViewStartContentInset];
                 }];
-                _scrollViewContentSizeChanged = NO;
+                self.scrollViewContentInsetChanged = NO;
             }
         }
     }
     CGFloat textFieldScreenYPosition = [textInputControl mag_viewOriginAtScreenCoordinates].y;
-    NSLog(@"after textField screen coordinates %f",textFieldScreenYPosition);
+    //NSLog(@"after textField screen coordinates %f",textFieldScreenYPosition);
     
     return result;
 }
