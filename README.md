@@ -32,7 +32,19 @@ pod 'MAGComfortTextInput'
 
 ## Usage
 
-For example, you have 3 UITextField and 3 UITextView on your UIView:
+You should prepare MAGKeyboardInfo before [self.window makeKeyAndVisible] in AppDelegate.m:
+
+```ruby
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+...
+[[MAGKeyboardInfo sharedInstance] prepareKeyboardWithMainWindow:self.window];
+[self.window makeKeyAndVisible];
+...
+}
+```
+
+So, for example, you have 3 UITextField and 3 UITextView in UIView of your UIViewController:
 
 ```ruby
 @property (weak, nonatomic) IBOutlet UITextField *tf1;
@@ -73,7 +85,7 @@ For example, you have 3 UITextField and 3 UITextView on your UIView:
 }
 ```
 
-For UIScrollView as fundament view of your InputFields you should to write like code:
+If, for example, you have 3 UITextField and 3 UITextView in UIScrollView (or UITableView) of your UIViewController, then change initialization code on the next:
 
 ```ruby
 - (MAGViewComfortTextInput *)configureTextFieldsForConvinientUsing {
