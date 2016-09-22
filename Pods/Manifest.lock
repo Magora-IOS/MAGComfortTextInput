@@ -1,5 +1,5 @@
 PODS:
-  - MAGMatveevReusable (0.1.0)
+  - MAGMatveevReusable (0.1.3)
 
 DEPENDENCIES:
   - MAGMatveevReusable (from `https://github.com/Magora-IOS/MAGMatveevReusable.git`)
@@ -10,12 +10,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MAGMatveevReusable:
-    :commit: da1c9af9d3b36c0f7394057155ee57459fce74be
+    :commit: 5130d82a75a0f4cd843368edd180cb44032d5ff3
     :git: https://github.com/Magora-IOS/MAGMatveevReusable.git
 
 SPEC CHECKSUMS:
-  MAGMatveevReusable: 6af1382b68807cf623b81057f4c03b1290137db5
+  MAGMatveevReusable: eec90a0d85889e1a4f7c2b2f8f9bf27915f9019d
 
 PODFILE CHECKSUM: 4d9e352631b3d6aafc4d94f94e8de824d1f39f49
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.rc.2

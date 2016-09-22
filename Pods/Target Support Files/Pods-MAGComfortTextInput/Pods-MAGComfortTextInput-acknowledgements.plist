@@ -216,6 +216,8 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>MAGMatveevReusable</string>
 			<key>Type</key>
