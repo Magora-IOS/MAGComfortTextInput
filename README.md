@@ -13,6 +13,10 @@ Possibilities:
 
 ![](https://github.com/Magora-IOS/MAGComfortTextInput/blob/master/Preview/MAGComfortTextInput.gif)
 
+## WARNING
+
+For testing on iOS Simulator you have to enable displaying of keyboard. For doing this open iOS Simulator -> Hardware -> Keyboard -> Connect Hardware Keyboard / Toggle software keyboard. (here CMD + K / CMD + SHIFT + K combinations)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -32,7 +36,7 @@ pod 'MAGComfortTextInput'
 
 ## Usage
 
-You should prepare MAGKeyboardInfo before [self.window makeKeyAndVisible] in AppDelegate.m:
+You should prepare MAGKeyboardInfo before [self.window makeKeyAndVisible] in AppDelegate.m. If you create your windows manually, then do this after creation of this. For example:
 
 ```ruby
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -43,6 +47,8 @@ You should prepare MAGKeyboardInfo before [self.window makeKeyAndVisible] in App
 ...
 }
 ```
+
+Else, if you use launch screen, then call this method at first after your window's creation! 
 
 So, for example, you have 3 UITextField and 3 UITextView in UIView of your UIViewController:
 
