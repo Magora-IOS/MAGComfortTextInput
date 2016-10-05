@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MAGComfortTextInput'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Making an input into UITextFields/UITextViews convinient'
 
 # This description is used to generate tags and improve search results.
@@ -37,6 +37,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-    s.dependency 'MAGMatveevReusable', '~> 0.1.0'
+    s.dependency 'MAGMatveevReusable', '~> 0.1.5'
 
 end

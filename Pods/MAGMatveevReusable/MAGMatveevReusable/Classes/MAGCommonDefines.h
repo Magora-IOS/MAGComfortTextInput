@@ -23,6 +23,9 @@
 #define IMG(name) [UIImage imageNamed:name]
 #define LS(str) NSLocalizedString(str, nil)
 
+#define ESCAPED(str) [str stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]]
+#define RIGHTBOOL(expression) expression ? YES : NO
+
 #define ASSERT(condition) NSAssert(condition,@"CUSTOM ASSERT WARNING")
 #define CUSTOM_ERROR(text) [[NSError alloc] initWithDomain:@"CustomDomain" code:5 userInfo:@{ NSLocalizedDescriptionKey : text}]
 #define THROW_EXCEPTION(exceptionName,reasonText) @throw [NSException exceptionWithName:exceptionName reason:reasonText userInfo:nil];
@@ -52,8 +55,8 @@ BOOL mag_isDebugBuild();
 
 BOOL mag_isEqualObjects(id obj1, id obj2);
 
-
-
+#define IS_THIS_BUILD_DOWNLOADED_FROM_APPSTORE mag_isThisBuildDownloadedFromAppStore()
+BOOL mag_isThisBuildDownloadedFromAppStore();
 
 @interface MAGCommonDefines : NSObject
 
