@@ -33,11 +33,11 @@
         __typeof__(self) __weak wself = self;
         _tapDetector.didFinishedWithTouchUpAtTargetViewLocationBlock = ^(CGPoint point) {
             CGPoint tappedScreenPoint = [wself.ownerView convertPoint:point toView:nil];
-//            NSLog(@"POINT %@ TRANSLATED %@",NSStringFromCGPoint(point),NSStringFromCGPoint(tappedScreenPoint));
-//            for (UITextField *currentTextField in wself.orderedTextFields) {
-//                CGRect translatedRect = [currentTextField viewFrameAtScreenCoordinates];
-//                NSLog(@"current textfield text %@ translated to window rect %@",currentTextField.text,NSStringFromCGRect(translatedRect));
-//            }
+            //            NSLog(@"POINT %@ TRANSLATED %@",NSStringFromCGPoint(point),NSStringFromCGPoint(tappedScreenPoint));
+            //            for (UITextField *currentTextField in wself.orderedTextFields) {
+            //                CGRect translatedRect = [currentTextField viewFrameAtScreenCoordinates];
+            //                NSLog(@"current textfield text %@ translated to window rect %@",currentTextField.text,NSStringFromCGRect(translatedRect));
+            //            }
             if ([wself.ownerView mag_hasFirstResponder]) {
                 if (wself.hideKeyboardOnTapOutside) {
                     BOOL someTextFieldContainsPoint = NO;
@@ -54,9 +54,24 @@
                 }
             }
         };
-
+        
     }
     return self;
+}
+
+- (void)setLastControlReturnKeyType:(NSNumber *)lastControlReturnKeyType {
+    _lastControlReturnKeyType = lastControlReturnKeyType;
+    
+    [self updateLastControlReturnKey];
+}
+
+- (void)updateLastControlReturnKey {
+    id<UITextInputTraits> lastControl = self.orderedTextInputControls[self.orderedTextInputControls.count - 1];
+    if (self. lastControlReturnKeyType) {
+        lastControl.returnKeyType = self.lastControlReturnKeyType.integerValue;
+    } else {
+        lastControl.returnKeyType = UIReturnKeyDone;
+    }
 }
 
 - (void)updateOrderedTextInputControls:(NSArray *)orderedTextInputControls {
@@ -64,9 +79,13 @@
         id<UITextInputTraits> control = orderedTextInputControls[i];
         control.returnKeyType = UIReturnKeyNext;
     }
-    id<UITextInputTraits> lastControl = orderedTextInputControls[orderedTextInputControls.count - 1];
-    lastControl.returnKeyType = UIReturnKeyDone;
-    
+    [self updateLastControlReturnKey];
+    //    id<UITextInputTraits> lastControl = orderedTextInputControls[orderedTextInputControls.count - 1];
+    //    if (self. lastControlReturnKeyType) {
+    //        lastControl.returnKeyType = self.lastControlReturnKeyType.integerValue;
+    //    } else {
+    //        lastControl.returnKeyType = UIReturnKeyDone;
+    //    }
     for (id currentControl in orderedTextInputControls) {
         if ([currentControl isKindOfClass:[UITextField class]]) {
             UITextField *textField = currentControl;
@@ -77,6 +96,16 @@
         }
     }
     self.orderedTextInputControls = orderedTextInputControls;
+}
+
+- (void)recenterCurrentFocusedTextInputControlItem:(UIView *)textInputControl {
+    if ([textInputControl isKindOfClass:[UITextField class]]) {
+        UITextField *textField = textInputControl;
+        [self textFieldDidEndEditing:textField];
+    } else if ([textInputControl isKindOfClass:[UITextView class]]) {
+        UITextView *textView = textInputControl;
+        [self textViewDidEndEditing:textView];
+    }
 }
 
 - (void)resetWithResignFirstResponder {

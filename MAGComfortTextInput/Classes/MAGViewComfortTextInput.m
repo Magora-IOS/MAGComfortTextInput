@@ -1,6 +1,7 @@
 
 #import "MAGViewComfortTextInput.h"
 #import "UIView+MAGMore.h"
+#import "MAGCommonDefines.h"
 
 @interface MAGViewComfortTextInput ()
 
@@ -27,7 +28,12 @@
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
     BOOL result = YES;
-    if ([text isEqualToString:@"\n"]) {
+    BOOL avoidNewLineCharacter = [text isEqualToString:@"\n"];
+    if (self.textInputControlShouldChangeFocusOrResignByReturnKey) {
+        BOOL willDoAction = self.textInputControlShouldChangeFocusOrResignByReturnKey(textView);
+        avoidNewLineCharacter = avoidNewLineCharacter && willDoAction;
+    }
+    if (avoidNewLineCharacter) {
         result = NO;
         [self textInputControlShouldReturn:textView];//     here returned result useless for us
     }
@@ -61,12 +67,16 @@
     }
     
     [self setOwnerViewYanimated:ownerViewNewTopY];
-    NSLog(@"freeHeightFromScreenTopToKeyboardTop %@",@(freeHeightFromScreenTopToKeyboardTop));
-    NSLog(@"freeHeightFromOwnerViewTopScreenCoordinatesToKeyboardTop %@",@(freeHeightFromOwnerViewTopScreenCoordinatesToKeyboardTop));
-    NSLog(@"verticallyCenteredTextFieldYinScreenCoordinates %@",@(verticallyCenteredTextFieldYinScreenCoordinates));
-    NSLog(@"neededOwnerViewShift %@",@(neededOwnerViewShift));
-    NSLog(@"neededOwnerViewShift %@",@(neededOwnerViewShift));
-    NSLog(@"ownerViewNewTopY %@",@(ownerViewNewTopY));
+    
+    BOOL displayDebugLog = NO;
+    if (displayDebugLog) {
+        NSLog(@"freeHeightFromScreenTopToKeyboardTop %@",@(freeHeightFromScreenTopToKeyboardTop));
+        NSLog(@"freeHeightFromOwnerViewTopScreenCoordinatesToKeyboardTop %@",@(freeHeightFromOwnerViewTopScreenCoordinatesToKeyboardTop));
+        NSLog(@"verticallyCenteredTextFieldYinScreenCoordinates %@",@(verticallyCenteredTextFieldYinScreenCoordinates));
+        NSLog(@"neededOwnerViewShift %@",@(neededOwnerViewShift));
+        NSLog(@"neededOwnerViewShift %@",@(neededOwnerViewShift));
+        NSLog(@"ownerViewNewTopY %@",@(ownerViewNewTopY));
+    }
 }
 
 - (BOOL)textInputControlShouldReturn:(UIView *)textInputControl {
@@ -77,16 +87,29 @@
             if (self.textInputControlDidEndEditingBlock) {
                 self.textInputControlDidEndEditingBlock(textInputControl);
             }
-            UITextField *nextTextField = [self.orderedTextInputControls objectAtIndex:index + 1];
-            [nextTextField becomeFirstResponder];
+            BOOL shouldGoNextControl = YES;
+            if (self.textInputControlShouldChangeFocusOrResignByReturnKey) {
+                shouldGoNextControl = self.textInputControlShouldChangeFocusOrResignByReturnKey(textInputControl);
+            }
+            if (shouldGoNextControl) {
+                UITextField *nextTextField = [self.orderedTextInputControls objectAtIndex:index + 1];
+                [nextTextField becomeFirstResponder];
+            }
         } else {
             if (self.lastTextInputControlDidEndEditingBlock) {
                 self.lastTextInputControlDidEndEditingBlock(textInputControl);
             }
             result = YES;
             [self turnToInitialState];
-            UIResponder *responder = textInputControl;
-            [responder resignFirstResponder];
+            
+            BOOL shouldFinishEditing = YES;
+            if (self.textInputControlShouldChangeFocusOrResignByReturnKey) {
+                shouldFinishEditing = self.textInputControlShouldChangeFocusOrResignByReturnKey(textInputControl);
+            }
+            if (shouldFinishEditing) {
+                UIResponder *responder = textInputControl;
+                [responder resignFirstResponder];
+            }
         }
     }
     CGFloat textFieldScreenYPosition = [textInputControl mag_viewOriginAtScreenCoordinates].y;

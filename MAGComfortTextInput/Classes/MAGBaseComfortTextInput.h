@@ -4,8 +4,8 @@
 
 #import "MAGKeyboardInfo.h"
 
-typedef void(^TextInputControlDidEndEditingBlock)(UIView *textInputControl);
-typedef void(^LastTextInputControlDidEndEditingBlock)(UIView *textInputControl);
+typedef void(^TextInputBlock)(UIView *textInputControl);
+typedef BOOL(^TextInputCheckBlock)(UIView *textInputControl);
 
 /**
         @warn !!! you should create it single time per view controller (but you may have some BaseComfortTextInput's per view controller - so init every of it single time for avoid very strange bugs (not settable cursor at textfields, captured previous created BaseComfortTextInput, or not displaying magnifier by long tap at this textfields, etc)
@@ -18,16 +18,22 @@ typedef void(^LastTextInputControlDidEndEditingBlock)(UIView *textInputControl);
 @property (assign, nonatomic, readonly) CGRect ownerViewStartFrame;
 @property (assign, nonatomic, readonly) CGRect ownerViewScreenStartFrame;
 
+@property (strong, nonatomic) NSNumber *lastControlReturnKeyType;// @(UIReturnKeyType)
+
 @property (nonatomic) BOOL hideKeyboardOnTapOutside;
 
-@property (strong, nonatomic) TextInputControlDidEndEditingBlock textInputControlDidEndEditingBlock;
-@property (strong, nonatomic) LastTextInputControlDidEndEditingBlock lastTextInputControlDidEndEditingBlock;
+@property (strong, nonatomic) TextInputBlock textInputControlDidEndEditingBlock;
+@property (strong, nonatomic) TextInputBlock lastTextInputControlDidEndEditingBlock;
+
+@property (strong, nonatomic) TextInputCheckBlock textInputControlShouldChangeFocusOrResignByReturnKey;//       when return NO for some control, then pressing of return key on this, will be added newline symbol!
 
 //!     @param      orderedTextInputControls is controls, numbered in right order of changing focus by Next button of keyboard, which may be just UITextField or UITextView
 - (instancetype)initWithOrderedTextInputControls:(NSArray *)orderedTextInputControls withOwnerView:(UIView *)ownerView;
 - (void)resetWithResignFirstResponder;
 
 - (void)updateOrderedTextInputControls:(NSArray *)orderedTextInputControls;
+
+- (void)recenterCurrentFocusedTextInputControlItem:(UIView *)textInputControl;
 
 //      for using just from subclasses:
 - (void)turnToInitialState;

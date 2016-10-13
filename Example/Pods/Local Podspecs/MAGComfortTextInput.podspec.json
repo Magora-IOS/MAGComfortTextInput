@@ -1,6 +1,6 @@
 {
   "name": "MAGComfortTextInput",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "summary": "Making an input into UITextFields/UITextViews convinient",
   "description": "Class for centering of focused UITextFields/UITextViews on free space of screen",
   "homepage": "https://github.com/Magora-IOS/MAGComfortTextInput",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Magora-IOS/MAGComfortTextInput.git",
-    "tag": "0.1.1"
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,7 +21,7 @@
   "source_files": "MAGComfortTextInput/Classes/**/*",
   "dependencies": {
     "MAGMatveevReusable": [
-      "~> 0.1.0"
+      "~> 0.1.7"
     ]
   }
 }
