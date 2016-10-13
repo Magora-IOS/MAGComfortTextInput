@@ -94,8 +94,8 @@
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
     BOOL result = YES;
     BOOL avoidNewLineCharacter = [text isEqualToString:@"\n"];
-    if (self.textInputControlShouldChangeFocusOrResignByReturnKey) {
-        BOOL willDoAction = self.textInputControlShouldChangeFocusOrResignByReturnKey(textView);
+    if (self.textInputControlShouldChangeFocusOrResignByReturnKeyBlock) {
+        BOOL willDoAction = self.textInputControlShouldChangeFocusOrResignByReturnKeyBlock(textView);
         avoidNewLineCharacter = avoidNewLineCharacter && willDoAction;
     }
     if (avoidNewLineCharacter) {
@@ -140,7 +140,13 @@
         newContentOffsetY = maximumContentOffsetY;
     }
     
-    [self setScrollViewContentOffsetY:newContentOffsetY];
+    CGFloat additionalShift = 0;
+    if (self.textInputControlAdditionalShiftOnFocusBlock) {
+        additionalShift = self.textInputControlAdditionalShiftOnFocusBlock(textInputControl);
+    }
+    CGFloat modifiedNewContentOffsetY = newContentOffsetY + additionalShift;
+    
+    [self setScrollViewContentOffsetY:modifiedNewContentOffsetY];
 }
 
 - (BOOL)textInputControlShouldReturn:(UIView *)textInputControl {
@@ -152,8 +158,8 @@
                 self.textInputControlDidEndEditingBlock(textInputControl);
             }
             BOOL shouldGoNextControl = YES;
-            if (self.textInputControlShouldChangeFocusOrResignByReturnKey) {
-                shouldGoNextControl = self.textInputControlShouldChangeFocusOrResignByReturnKey(textInputControl);
+            if (self.textInputControlShouldChangeFocusOrResignByReturnKeyBlock) {
+                shouldGoNextControl = self.textInputControlShouldChangeFocusOrResignByReturnKeyBlock(textInputControl);
             }
             if (shouldGoNextControl) {
                 UITextField *nextTextField = [self.orderedTextInputControls objectAtIndex:index + 1];
@@ -167,8 +173,8 @@
             [self turnToInitialState];
             
             BOOL shouldFinishEditing = YES;
-            if (self.textInputControlShouldChangeFocusOrResignByReturnKey) {
-                shouldFinishEditing = self.textInputControlShouldChangeFocusOrResignByReturnKey(textInputControl);
+            if (self.textInputControlShouldChangeFocusOrResignByReturnKeyBlock) {
+                shouldFinishEditing = self.textInputControlShouldChangeFocusOrResignByReturnKeyBlock(textInputControl);
             }
             if (shouldFinishEditing) {
                 [textInputControl resignFirstResponder];
