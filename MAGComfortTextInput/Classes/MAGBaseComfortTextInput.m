@@ -32,31 +32,37 @@
         [_tapDetector attachToTargetView:ownerView];
         __typeof__(self) __weak wself = self;
         _tapDetector.didFinishedWithTouchUpAtTargetViewLocationBlock = ^(CGPoint point) {
-            CGPoint tappedScreenPoint = [wself.ownerView convertPoint:point toView:nil];
+            [self hideKeyboardIfTextInputControlsInsideOfViewNotFocused:wself.ownerView ifTappedPoint:point];
+        };
+        
+    }
+    return self;
+}
+
+- (void)hideKeyboardIfTextInputControlsInsideOfViewNotFocused:(UIView *)view ifTappedPoint:(CGPoint)point {
+            CGPoint tappedScreenPoint = [view convertPoint:point toView:nil];
+    
             //            NSLog(@"POINT %@ TRANSLATED %@",NSStringFromCGPoint(point),NSStringFromCGPoint(tappedScreenPoint));
             //            for (UITextField *currentTextField in wself.orderedTextFields) {
             //                CGRect translatedRect = [currentTextField viewFrameAtScreenCoordinates];
             //                NSLog(@"current textfield text %@ translated to window rect %@",currentTextField.text,NSStringFromCGRect(translatedRect));
             //            }
-            if ([wself.ownerView mag_hasFirstResponder]) {
-                if (wself.hideKeyboardOnTapOutside) {
+            if ([view mag_hasFirstResponder]) {
+                if (self.hideKeyboardOnTapOutside) {
                     BOOL someTextFieldContainsPoint = NO;
-                    for (UITextField *currentTextField in wself.orderedTextInputControls) {
+                    for (UITextField *currentTextField in self.orderedTextInputControls) {
                         CGRect textFieldScreenFrame = [currentTextField mag_viewFrameAtScreenCoordinates];
+                        NSLog(@"frame: %@    %@",NSStringFromCGRect(textFieldScreenFrame), NSStringFromCGPoint(tappedScreenPoint));
                         if (CGRectContainsPoint(textFieldScreenFrame, tappedScreenPoint)) {
                             someTextFieldContainsPoint = YES;
                             break;
                         }
                     }
                     if (!someTextFieldContainsPoint) {
-                        [wself hideKeyboard];
+                        [self hideKeyboard];
                     }
                 }
             }
-        };
-        
-    }
-    return self;
 }
 
 - (void)setLastControlReturnKeyType:(NSNumber *)lastControlReturnKeyType {
@@ -101,10 +107,10 @@
 - (void)recenterCurrentFocusedTextInputControlItem:(UIView *)textInputControl {
     if ([textInputControl isKindOfClass:[UITextField class]]) {
         UITextField *textField = textInputControl;
-        [self textFieldDidEndEditing:textField];
+        [self textFieldWillBeginEditing:textField];
     } else if ([textInputControl isKindOfClass:[UITextView class]]) {
         UITextView *textView = textInputControl;
-        [self textViewDidEndEditing:textView];
+        [self textViewDidBeginEditing:textView];
     }
 }
 
