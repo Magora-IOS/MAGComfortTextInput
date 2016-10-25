@@ -2,6 +2,7 @@
 #import "MAGBaseComfortTextInput.h"
 #import "MAGFreeSpaceLongTouchDetector.h"
 #import "UIView+MAGMore.h"
+#import "MAGCommonDefines.h"
 
 @interface MAGBaseComfortTextInput ()
 
@@ -40,29 +41,29 @@
 }
 
 - (void)hideKeyboardIfTextInputControlsInsideOfViewNotFocused:(UIView *)view ifTappedPoint:(CGPoint)point {
-            CGPoint tappedScreenPoint = [view convertPoint:point toView:nil];
+    CGPoint tappedScreenPoint = [view convertPoint:point toView:nil];
     
-            //            NSLog(@"POINT %@ TRANSLATED %@",NSStringFromCGPoint(point),NSStringFromCGPoint(tappedScreenPoint));
-            //            for (UITextField *currentTextField in wself.orderedTextFields) {
-            //                CGRect translatedRect = [currentTextField viewFrameAtScreenCoordinates];
-            //                NSLog(@"current textfield text %@ translated to window rect %@",currentTextField.text,NSStringFromCGRect(translatedRect));
-            //            }
-            if ([view mag_hasFirstResponder]) {
-                if (self.hideKeyboardOnTapOutside) {
-                    BOOL someTextFieldContainsPoint = NO;
-                    for (UITextField *currentTextField in self.orderedTextInputControls) {
-                        CGRect textFieldScreenFrame = [currentTextField mag_viewFrameAtScreenCoordinates];
-                        NSLog(@"frame: %@    %@",NSStringFromCGRect(textFieldScreenFrame), NSStringFromCGPoint(tappedScreenPoint));
-                        if (CGRectContainsPoint(textFieldScreenFrame, tappedScreenPoint)) {
-                            someTextFieldContainsPoint = YES;
-                            break;
-                        }
-                    }
-                    if (!someTextFieldContainsPoint) {
-                        [self hideKeyboard];
-                    }
+    //            NSLog(@"POINT %@ TRANSLATED %@",NSStringFromCGPoint(point),NSStringFromCGPoint(tappedScreenPoint));
+    //            for (UITextField *currentTextField in wself.orderedTextFields) {
+    //                CGRect translatedRect = [currentTextField viewFrameAtScreenCoordinates];
+    //                NSLog(@"current textfield text %@ translated to window rect %@",currentTextField.text,NSStringFromCGRect(translatedRect));
+    //            }
+    if ([view mag_hasFirstResponder]) {
+        if (self.hideKeyboardOnTapOutside) {
+            BOOL someTextFieldContainsPoint = NO;
+            for (UITextField *currentTextField in self.orderedTextInputControls) {
+                CGRect textFieldScreenFrame = [currentTextField mag_viewFrameAtScreenCoordinates];
+                NSLog(@"frame: %@    %@",NSStringFromCGRect(textFieldScreenFrame), NSStringFromCGPoint(tappedScreenPoint));
+                if (CGRectContainsPoint(textFieldScreenFrame, tappedScreenPoint)) {
+                    someTextFieldContainsPoint = YES;
+                    break;
                 }
             }
+            if (!someTextFieldContainsPoint) {
+                [self hideKeyboard];
+            }
+        }
+    }
 }
 
 - (void)setLastControlReturnKeyType:(NSNumber *)lastControlReturnKeyType {
@@ -96,6 +97,7 @@
         if ([currentControl isKindOfClass:[UITextField class]]) {
             UITextField *textField = currentControl;
             textField.delegate = self;
+            [textField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
         } else if ([currentControl isKindOfClass:[UITextView class]]) {
             UITextView *textView = currentControl;
             textView.delegate = self;
@@ -167,6 +169,10 @@
     }
 }
 
+- (void)textFieldDidChange:(UITextField *)textField {
+    RUN_BLOCK(self.didTextInputControlTextChangedBlock, textField);
+}
+
 #pragma mark - UITextViewDelegate DELEGATE
 
 - (void)textViewDidBeginEditing:(UITextView *)textView {
@@ -183,6 +189,11 @@
         self.textInputControlDidEndEditingBlock(textView);
     }
 }
+
+- (void)textViewDidChange:(UITextView *)textView {
+    RUN_BLOCK(self.didTextInputControlTextChangedBlock, textView);
+}
+
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];

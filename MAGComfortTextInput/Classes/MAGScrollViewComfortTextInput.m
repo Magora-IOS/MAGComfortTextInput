@@ -1,6 +1,7 @@
 
 #import "MAGScrollViewComfortTextInput.h"
 #import "UIView+MAGMore.h"
+#import "MAGCommonDefines.h"
 
 @interface MAGScrollViewComfortTextInput ()
 
@@ -52,6 +53,7 @@
 
 - (void)textFieldWillBeginEditing:(UITextField *)textField {
     [self textInputControlWillBeginEditing:textField];
+    RUN_BLOCK(self.didTextInputControlStartEditingBlock, textField);
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -89,6 +91,7 @@
 
 - (void)textViewDidBeginEditing:(UITextView *)textView {
     [self textInputControlWillBeginEditing:textView];
+    RUN_BLOCK(self.didTextInputControlStartEditingBlock, textView);
 }
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {

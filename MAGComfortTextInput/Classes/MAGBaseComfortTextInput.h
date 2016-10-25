@@ -23,6 +23,8 @@ typedef CGFloat(^TextInputShiftBlock)(UIView *textInputControl);
 
 @property (nonatomic) BOOL hideKeyboardOnTapOutside;
 
+@property (strong, nonatomic) TextInputBlock didTextInputControlTextChangedBlock;
+@property (strong, nonatomic) TextInputBlock didTextInputControlStartEditingBlock;
 @property (strong, nonatomic) TextInputBlock textInputControlDidEndEditingBlock;
 @property (strong, nonatomic) TextInputBlock lastTextInputControlDidEndEditingBlock;
 

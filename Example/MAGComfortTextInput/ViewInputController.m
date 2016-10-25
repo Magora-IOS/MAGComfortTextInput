@@ -55,11 +55,18 @@
     }
     
     _comfortTextInput = [[MAGViewComfortTextInput alloc] initWithOrderedTextInputControls:@[self.tf1,self.tv1,self.tf2,self.tv2,self.tf3,self.tv3 ] withOwnerView:self.view];
+    _comfortTextInput.didTextInputControlStartEditingBlock = ^(UIView *textInputControl) {
+        NSLog(@"DID START EDITING: %@",textInputControl);
+    };
+    _comfortTextInput.didTextInputControlTextChangedBlock = ^(UIView *textInputControl) {
+        NSLog(@"text changed %@",textInputControl);
+    };
+    
     _comfortTextInput.textInputControlDidEndEditingBlock = ^(UIView *textInputControl) {
-        NSLog(@"DO SOMETHING");
+
     };
     _comfortTextInput.lastTextInputControlDidEndEditingBlock = ^(UIView *textInputControl) {
-        NSLog(@"DO SOMETHING ON FINISH");
+
     };
     return _comfortTextInput;
 }
