@@ -16,6 +16,15 @@
     RUN_BLOCK(self.didTextInputControlStartEditingBlock, textField);
 }
 
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    BOOL result = YES;
+    BOOL willCallShouldChangeBlock = result && self.shouldChangeTextInRangeBlock;
+    if (willCallShouldChangeBlock) {
+        result = self.shouldChangeTextInRangeBlock(textField, range, string);
+    }
+    return result;
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     BOOL result = [self textInputControlShouldReturn:textField];
     return result;
@@ -39,6 +48,11 @@
         result = NO;
         [self textInputControlShouldReturn:textView];//     here returned result useless for us
     }
+    BOOL willCallShouldChangeBlock = result && self.shouldChangeTextInRangeBlock;
+    if (willCallShouldChangeBlock) {
+        result = self.shouldChangeTextInRangeBlock(textView, range, text);
+    }
+
     return result;
 }
 

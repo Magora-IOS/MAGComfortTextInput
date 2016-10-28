@@ -7,6 +7,8 @@
 typedef void(^TextInputBlock)(UIView *textInputControl);
 typedef BOOL(^TextInputCheckBlock)(UIView *textInputControl);
 typedef CGFloat(^TextInputShiftBlock)(UIView *textInputControl);
+typedef BOOL(^ShouldChangeTextInRangeBlock)(UIView *textInputControl, NSRange range, NSString *replacementText);
+
 
 /**
         @warn !!! you should create it single time per view controller (but you may have some BaseComfortTextInput's per view controller - so init every of it single time for avoid very strange bugs (not settable cursor at textfields, captured previous created BaseComfortTextInput, or not displaying magnifier by long tap at this textfields, etc)
@@ -22,6 +24,9 @@ typedef CGFloat(^TextInputShiftBlock)(UIView *textInputControl);
 @property (strong, nonatomic) NSNumber *lastControlReturnKeyType;// @(UIReturnKeyType)
 
 @property (nonatomic) BOOL hideKeyboardOnTapOutside;
+
+
+@property (strong, nonatomic) ShouldChangeTextInRangeBlock shouldChangeTextInRangeBlock;
 
 @property (strong, nonatomic) TextInputBlock didTextInputControlTextChangedBlock;
 @property (strong, nonatomic) TextInputBlock didTextInputControlStartEditingBlock;
