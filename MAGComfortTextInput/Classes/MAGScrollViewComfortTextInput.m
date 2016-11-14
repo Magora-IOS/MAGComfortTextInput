@@ -162,6 +162,9 @@
     }
     CGFloat modifiedNewContentOffsetY = newContentOffsetY + additionalShift;
     
+    if (modifiedNewContentOffsetY < 0) {
+        modifiedNewContentOffsetY = 0;
+    }
     [self setScrollViewContentOffsetY:modifiedNewContentOffsetY];
 }
 
