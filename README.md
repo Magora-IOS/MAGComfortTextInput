@@ -109,6 +109,9 @@ If, for example, you have 3 UITextField and 3 UITextView in UIScrollView (or UIT
     return _comfortTextInput;
 }
 ```
+## KNOWN ISSUES
+
+Not use textInputControls, which located in UITableView.tableHeaderView and UITableView.tableFooterView bcs perhaps due hidden logics of this views (autolayout logics) focusing of it works wrong... 
 
 ## Author
 
