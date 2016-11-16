@@ -106,6 +106,15 @@
     }
 }
 
+- (void)setShouldRecognizeViewAsFreespaceBlock:(TappedViewBlock)shouldRecognizeViewAsFreespaceBlock {
+    self.tapDetector.shouldRecognizeViewAsFreespaceBlock = shouldRecognizeViewAsFreespaceBlock;
+}
+
+- (TappedViewBlock)shouldRecognizeViewAsFreespaceBlock {
+    TappedViewBlock result = self.tapDetector.shouldRecognizeViewAsFreespaceBlock;
+    return result;
+}
+
 - (void)recenterCurrentFocusedTextInputControlItem:(UIView *)textInputControl {
     if ([textInputControl isKindOfClass:[UITextField class]]) {
         UITextField *textField = textInputControl;

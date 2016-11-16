@@ -3,7 +3,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 #import "MAGKeyboardInfo.h"
-
+#import "MAGFreeSpaceLongTouchDetector.h"
 typedef void(^TextInputBlock)(UIView *textInputControl);
 typedef BOOL(^TextInputCheckBlock)(UIView *textInputControl);
 typedef CGFloat(^TextInputShiftBlock)(UIView *textInputControl);
@@ -35,6 +35,9 @@ typedef BOOL(^ShouldChangeTextInRangeBlock)(UIView *textInputControl, NSRange ra
 
 @property (strong, nonatomic) TextInputCheckBlock textInputControlShouldChangeFocusOrResignByReturnKeyBlock;//       when return NO for some control, then pressing of return key on this, will be added newline symbol!
 @property (strong, nonatomic) TextInputShiftBlock textInputControlAdditionalShiftOnFocusBlock;//       when return NO for some control, then
+
+@property (strong, nonatomic) TappedViewBlock shouldRecognizeViewAsFreespaceBlock;
+
 //!     @param      orderedTextInputControls is controls, numbered in right order of changing focus by Next button of keyboard, which may be just UITextField or UITextView
 - (instancetype)initWithOrderedTextInputControls:(NSArray *)orderedTextInputControls withOwnerView:(UIView *)ownerView;
 - (void)resetWithResignFirstResponder;

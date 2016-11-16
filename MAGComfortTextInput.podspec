@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MAGComfortTextInput'
-  s.version          = '0.2.8'
+  s.version          = '0.2.9'
   s.summary          = 'Making an input into UITextFields/UITextViews convinient'
 
 # This description is used to generate tags and improve search results.

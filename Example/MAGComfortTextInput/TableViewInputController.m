@@ -55,6 +55,10 @@
     NSArray *cells = [self.tm.tableView visibleCells];
     NSArray *textFields = [cells valueForKeyPath:@"tf"];
     _comfortTextInput = [[MAGScrollViewComfortTextInput alloc] initWithOrderedTextInputControls:textFields withOwnerView:self.view withScrollViewInsideOwnerViewWhereTextFieldsLocated:self.tm.tableView];
+//    _comfortTextInput.shouldRecognizeViewAsFreespaceBlock = ^(UIView *tappedView) {
+//        BOOL result = !EQUAL([tappedView mag_className], @"UITableViewCellContentView");
+//        return result;
+//    };
     
     _comfortTextInput.lastTextInputControlDidEndEditingBlock = ^(UIView *textInputControl) {
         UITextField *tf = (UITextField *)textInputControl;
