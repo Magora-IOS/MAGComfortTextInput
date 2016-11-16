@@ -2,13 +2,7 @@
 #import <UIKit/UIKit.h>
 #endif
 
-#import "MAGBaseComfortTextInput.h"
-#import "MAGComfortTextInput_umbrella.h"
-#import "MAGFreeSpaceLongTouchDetector.h"
-#import "MAGKeyboardInfo.h"
-#import "MAGLongTouchDetector.h"
-#import "MAGScrollViewComfortTextInput.h"
-#import "MAGViewComfortTextInput.h"
+#import "MAGComfortTextInput.h"
 
 FOUNDATION_EXPORT double MAGComfortTextInputVersionNumber;
 FOUNDATION_EXPORT const unsigned char MAGComfortTextInputVersionString[];

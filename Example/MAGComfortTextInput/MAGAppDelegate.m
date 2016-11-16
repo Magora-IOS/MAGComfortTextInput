@@ -8,7 +8,6 @@
 
 #import "MAGAppDelegate.h"
 #import "ViewInputController.h"
-#import "MAGKeyboardInfo.h"
 
 @implementation MAGAppDelegate
 

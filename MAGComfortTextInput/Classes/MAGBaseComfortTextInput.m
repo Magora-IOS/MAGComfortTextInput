@@ -82,6 +82,7 @@
 }
 
 - (void)updateOrderedTextInputControls:(NSArray *)orderedTextInputControls {
+    self.orderedTextInputControls = orderedTextInputControls;
     for (NSInteger i = 0; i < orderedTextInputControls.count - 1; ++i) {
         id<UITextInputTraits> control = orderedTextInputControls[i];
         control.returnKeyType = UIReturnKeyNext;
@@ -103,7 +104,6 @@
             textView.delegate = self;
         }
     }
-    self.orderedTextInputControls = orderedTextInputControls;
 }
 
 - (void)recenterCurrentFocusedTextInputControlItem:(UIView *)textInputControl {

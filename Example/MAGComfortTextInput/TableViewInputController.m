@@ -9,7 +9,6 @@
 
 #import "TableViewInputController.h"
 #import "RCTableManager.h"
-#import "MAGScrollViewComfortTextInput.h"
 #import "Cell.h"
 
 @interface TableViewInputController ()

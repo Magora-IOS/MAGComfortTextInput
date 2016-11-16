@@ -15,5 +15,6 @@
     @import Foundation;
 
     #import <libextobjc/extobjc.h>
+    #import "MAGComfortTextInput.h"
 #endif
 
