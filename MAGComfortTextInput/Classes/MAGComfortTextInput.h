@@ -9,11 +9,13 @@
 #ifndef MAGTablesCollections_h
 #define MAGTablesCollections_h
 
+//#import <MAGMatveevReusable/MAGMatveevReusable.h>
+
 #import "MAGKeyboardInfo.h"
-#import "MAGViewComfortTextInput.h"
-#import "MAGScrollViewComfortTextInput.h"
 #import "MAGLongTouchDetector.h"
 #import "MAGTapDetector.h"
+#import "MAGViewComfortTextInput.h"
+#import "MAGScrollViewComfortTextInput.h"
 #import "MAGFreeSpaceTouchDetector.h"
 
 #endif /* MAGTablesCollections_h */

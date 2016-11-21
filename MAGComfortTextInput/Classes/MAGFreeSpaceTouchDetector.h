@@ -1,5 +1,4 @@
 
-#import "MAGLongTouchDetector.h"
 #import "MAGTapDetector.h"
 
 typedef BOOL (^TappedViewBlock)(UIView *view);

@@ -38,9 +38,17 @@
 #define IOS_VERSION_SECOND_NUMBER ([[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."].count > 1 ? [[[[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."] objectAtIndex:1] integerValue] : 0)
 #define IOS_VERSION_THIRD_NUMBER ([[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."].count > 2 ? [[[[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."] objectAtIndex:2] integerValue] : 0)
 
-typedef void(^MAGItemBlock)(id item);
+typedef void(^MAGBoolBlock)(BOOL boolValue);
+typedef void(^MAGIntegerBlock)(NSInteger value);
 typedef void(^MAGIndexBlock)(NSInteger index);
+typedef void(^MAGDoubleBlock)(CGFloat value);
+
+typedef void(^MAGNumberBlock)(NSNumber *number);
+typedef void(^MAGPointBlock)(CGPoint point);
+typedef void(^MAGFrameBlock)(CGRect frame);
 typedef void(^MAGIndexPathBlock)(NSIndexPath *indexPath);
+
+typedef void(^MAGItemBlock)(id item);
 typedef void(^MAGCellBlock)(UITableViewCell *cell);
 typedef void(^MAGHeaderCellBlock)(UITableViewCell *cell, NSString *sortProperty, BOOL ascending);
 
@@ -58,6 +66,25 @@ BOOL mag_isEqualObjects(id obj1, id obj2);
 #define IS_THIS_BUILD_DOWNLOADED_FROM_APPSTORE mag_isThisBuildDownloadedFromAppStore()
 BOOL mag_isThisBuildDownloadedFromAppStore();
 
+#define IS_PHONE [MAGCommonDefines isPhoneDevice]
+#define IS_PAD [MAGCommonDefines isPadDevice]
+#define IS_RETINA [MAGCommonDefines isRetina]
+#define IS_PHONE_4 [MAGCommonDefines isIphone4]
+#define IS_PHONE_5 [MAGCommonDefines isIphone5]
+#define IS_PHONE_6 [MAGCommonDefines isPhone6]
+#define IS_PHONE_6_PLUS [MAGCommonDefines isPhone6Plus]
+
 @interface MAGCommonDefines : NSObject
+
++ (BOOL)isPhoneDevice;
++ (BOOL)isPadDevice;
++ (BOOL)isRetina;
++ (BOOL)isIphone4;
++ (BOOL)isIphone5;
++ (BOOL)isPhone6;
++ (BOOL)isPhone6Plus;
+
++ (CGRect)mainScreenBoundsPortrait;
++ (CGRect)mainScreenBoundsLandscape;
 
 @end

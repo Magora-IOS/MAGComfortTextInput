@@ -1,11 +1,12 @@
 
 #import <Foundation/Foundation.h>
-#import "MAGCommonDefines.h"
+
+#import <MAGMatveevReusable/MAGMatveevReusable.h>
 
 @interface MAGTapDetector : NSObject
 
-@property (copy, nonatomic) MAGPointBlock willTappedBlock;
-@property (copy, nonatomic) MAGPointBlock didTappedBlock;
+@property (strong, nonatomic) MAGPointBlock willTappedBlock;
+@property (strong, nonatomic) MAGPointBlock didTappedBlock;
 @property (readonly, strong, nonatomic) UITapGestureRecognizer *recognizer;
 
 - (void)attachToTargetView:(UIView *)targetView;

@@ -2,8 +2,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-#import "MAGKeyboardInfo.h"
+#import <MAGMatveevReusable/MAGMatveevReusable.h>
+
 #import "MAGFreeSpaceTouchDetector.h"
+#import "MAGKeyboardInfo.h"
+
+
 typedef void(^TextInputBlock)(UIView *textInputControl);
 typedef BOOL(^TextInputCheckBlock)(UIView *textInputControl);
 typedef CGFloat(^TextInputShiftBlock)(UIView *textInputControl);
