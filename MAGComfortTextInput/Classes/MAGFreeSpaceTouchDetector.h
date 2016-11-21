@@ -1,9 +1,10 @@
 
 #import "MAGLongTouchDetector.h"
+#import "MAGTapDetector.h"
 
 typedef BOOL (^TappedViewBlock)(UIView *view);
 
-@interface MAGFreeSpaceLongTouchDetector : MAGLongTouchDetector
+@interface MAGFreeSpaceTouchDetector : MAGTapDetector
 
 @property (strong, nonatomic) TappedViewBlock shouldRecognizeViewAsFreespaceBlock;
 

@@ -12,6 +12,7 @@
 #pragma mark - UITextFieldDelegate DELEGATE
 
 - (void)textFieldWillBeginEditing:(UITextField *)textField {
+    NSLog(@"TF WILL BEGIN DEEP");
     [self textInputControlWillBeginEditing:textField];
     RUN_BLOCK(self.didTextInputControlStartEditingBlock, textField);
 }
@@ -33,6 +34,7 @@
 #pragma mark - UITextViewDelegate DELEGATE
 
 - (void)textViewDidBeginEditing:(UITextView *)textView {
+    NSLog(@"TV DID BEGIN DEEP");
     [self textInputControlWillBeginEditing:textView];
     RUN_BLOCK(self.didTextInputControlStartEditingBlock, textView);
 }

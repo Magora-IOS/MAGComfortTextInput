@@ -3,7 +3,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 #import "MAGKeyboardInfo.h"
-#import "MAGFreeSpaceLongTouchDetector.h"
+#import "MAGFreeSpaceTouchDetector.h"
 typedef void(^TextInputBlock)(UIView *textInputControl);
 typedef BOOL(^TextInputCheckBlock)(UIView *textInputControl);
 typedef CGFloat(^TextInputShiftBlock)(UIView *textInputControl);

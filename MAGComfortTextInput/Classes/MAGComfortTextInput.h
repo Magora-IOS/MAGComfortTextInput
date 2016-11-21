@@ -13,6 +13,7 @@
 #import "MAGViewComfortTextInput.h"
 #import "MAGScrollViewComfortTextInput.h"
 #import "MAGLongTouchDetector.h"
-#import "MAGFreeSpaceLongTouchDetector.h"
+#import "MAGTapDetector.h"
+#import "MAGFreeSpaceTouchDetector.h"
 
 #endif /* MAGTablesCollections_h */

@@ -8,70 +8,72 @@
 
 /* Begin PBXBuildFile section */
 		0123CF9151A761F4FFA32A30FF65C975 /* Pods-MAGComfortTextInput_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 325CB40A25BE3FE9D4BF55AB80F66E50 /* Pods-MAGComfortTextInput_Tests-dummy.m */; };
+		03DD1AA303F1F4A06C61D94C08F97D19 /* MAGComfortTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 087622D35CF6C89B30A3754A33BADD1C /* MAGComfortTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09CCF66F76197779DA94D69418FF9A71 /* MAGTapDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F9256FFD7B678598BA22E2BDFA650 /* MAGTapDetector.m */; };
 		0CB380D43485EDA9047055D62156A35B /* NSInvocation+EXT.h in Headers */ = {isa = PBXBuildFile; fileRef = 51DBEAAADA69BA8328B6B9A0A7BCB7B0 /* NSInvocation+EXT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FA6D652E192D5AA5D88EB1321951F14 /* UIViewController+MAGMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E29E85D3A4FE204AEC642345D26034F /* UIViewController+MAGMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10FD2A777CAEEE52E5A1A8E4D5EE3C80 /* EXTSafeCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1938EC9D60AE9E47A67765D4468C17 /* EXTSafeCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		116B43549E02E56E3FFBB2421A24A088 /* MAGBaseComfortTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 501C2D702E8D8FD84CB868D270C948E9 /* MAGBaseComfortTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		130FFA546258FB231075E5136F05BE42 /* EXTSelectorChecking.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9AE050D7369CCBD9367C9003A9412A /* EXTSelectorChecking.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		148E81B2D52ECB7E9EEFC0EC7163A37A /* UITextView+MAGMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 87CAB6579B866B2FFC108CE979482D5C /* UITextView+MAGMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1511FCDCBAEA8337522B159B2C32D885 /* NSInvocation+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A853EFD259B8956CF8258892B72E6D /* NSInvocation+EXT.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		18FB1E12B626B1A75B4E18A87889D4DF /* NSObject+MAGMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BAF9067FB15031EA820350015787928 /* NSObject+MAGMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1AEE39DA9E138B362335B2A3A18672C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0CC687A1A88F6916D36DD0C09E9572 /* Foundation.framework */; };
-		1CEE66D66DF078E997CB871774567FE4 /* MAGViewComfortTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD8B23DF2B7D37DF8B811A4E2DA1B2 /* MAGViewComfortTextInput.m */; };
-		1EE8011124C59FC000EFE8C2A7B4B44D /* MAGMatveevReusable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A5B320E75C268A7882BE7B436B7AC /* MAGMatveevReusable-dummy.m */; };
-		250C94C63713B2057BC13A4C11316E00 /* MAGScrollViewComfortTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B71850BEC8A2E8FAB93D4839752464B /* MAGScrollViewComfortTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2673E1D9C245484438137E6DDAEF966F /* MAGCommonDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435E473126707D5E52167AD9058739 /* MAGCommonDefines.m */; };
-		2C95DF097AAAD1CF2672661451529C5B /* MAGComfortTextInput-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E4E3663D4F4EAE342678BE7D1A58D5 /* MAGComfortTextInput-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32C33D5EF5CFC3E662783740F0EEE584 /* MAGViewComfortTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = E00D77ABF580E939FCF1831B1DAB75EA /* MAGViewComfortTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26AEF0930D6E39FF72C301D741090E24 /* MAGMatveevReusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203BA33E6EC858E35109AFA7F5C60656 /* MAGMatveevReusable.framework */; };
+		2B2E19275F48B067D01F49DB06218F71 /* MAGFreeSpaceTouchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF4A6B8A017737BAAD6B389B9256559 /* MAGFreeSpaceTouchDetector.m */; };
+		32E9AD356753BC1031DC3CF0C82E746F /* UIView+MAGMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A30AD2AC9393F58569374ECFA52A11E /* UIView+MAGMore.m */; };
 		34A879F095CBBB8EFC040720744D97A1 /* EXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FC143A0135DF1B6397DCE717174EE8 /* EXTRuntimeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3798D71A924D1D7D305D1A283A752233 /* MAGScrollViewComfortTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E62FCA92997C2767B1744088A56BA2F0 /* MAGScrollViewComfortTextInput.m */; };
-		39E4BFC607EBD83685338DF4CBA2BA5C /* UIViewController+MAGMore.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AEB63119D8D4FF288E5450FBEDD067 /* UIViewController+MAGMore.m */; };
+		38DB1E924CCC39B283FB521A2ECF21E7 /* UITextView+MAGMore.m in Sources */ = {isa = PBXBuildFile; fileRef = BD565745571DB7973B68643BF4E63977 /* UITextView+MAGMore.m */; };
 		417A919ADEA555EEF21E129B9D9348CE /* EXTSafeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7793BFA7D7E4BC4648DA278E51C007A0 /* EXTSafeCategory.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4481CDACD0EDBEAF814CE485437EAA86 /* UIViewController+MAGMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E29E85D3A4FE204AEC642345D26034F /* UIViewController+MAGMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4573A06F7227BC1B836C76BD3C43A33C /* EXTADT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0579DDB01E2223FCC1115A36616B2794 /* EXTADT.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4ADDA13DBBA53D99824DAB78597C144E /* MAGFreeSpaceLongTouchDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = BBC84A0CD347177E26F442C7E2B5B78C /* MAGFreeSpaceLongTouchDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		508773C3614351E517C1E207E5BFC36C /* MAGMatveevReusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203BA33E6EC858E35109AFA7F5C60656 /* MAGMatveevReusable.framework */; };
-		5746249C8D6084F0688A932109035F75 /* UIView+MAGMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A30AD2AC9393F58569374ECFA52A11E /* UIView+MAGMore.m */; };
+		4C06C276515449803D6E3C9B94AFE6BF /* UIView+MAGMore.h in Headers */ = {isa = PBXBuildFile; fileRef = B737679A40F6E844EDB61395CB3C876F /* UIView+MAGMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E7EA9BFB120C0D39BF2CB0FA26B6E24 /* NSObject+MAGMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D4A9A496A29479B576190B0F85CF4 /* NSObject+MAGMore.m */; };
+		551CBED9F1334AE19D392B27C8625321 /* MAGLongTouchDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 35179557E5D2FA040A803D796D9A128C /* MAGLongTouchDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60963A5415C890A6CFA23B05A480D612 /* EXTSynthesize.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E472DCE9347F4EFE08480E0655C0A6 /* EXTSynthesize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61148B6D386D00D76F3A6CFFD385F159 /* MAGBaseComfortTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCBBA69FCC1D05C54ED615C4587134 /* MAGBaseComfortTextInput.m */; };
-		64CDE8C951779A38FD32AF9E557B0975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0CC687A1A88F6916D36DD0C09E9572 /* Foundation.framework */; };
 		68555307BEC835F03BFDC90AF9C4F1E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0CC687A1A88F6916D36DD0C09E9572 /* Foundation.framework */; };
-		695EBC14C2B21F1AB3EFC02A5097FCE1 /* NSObject+MAGMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BAF9067FB15031EA820350015787928 /* NSObject+MAGMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69C0BB569018682D79912DB4A1CD3F73 /* UITextView+MAGMore.m in Sources */ = {isa = PBXBuildFile; fileRef = BD565745571DB7973B68643BF4E63977 /* UITextView+MAGMore.m */; };
+		6F34E836D3B29E773BCED36617BE1508 /* UINavigationBar+MAGMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4213DFA48FF0213DCDF96FB6B7BFEF2F /* UINavigationBar+MAGMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		725F1B12F7D09E8B4DD1A2581307C785 /* EXTConcreteProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = A2871C12087E9DFB61C0F26BF7218A6C /* EXTConcreteProtocol.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		73A63F9D90E8740A3A6B62754D5F889E /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D58E6859C62A5984F6A1EFAED65D60 /* EXTRuntimeExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		750E1868A59AFA26A76E1D63DEAEE281 /* UINavigationBar+MAGMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4213DFA48FF0213DCDF96FB6B7BFEF2F /* UINavigationBar+MAGMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75849B21D715DC30E9AA972461C4F296 /* MAGScrollViewComfortTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C0C477F1D1A8DBAD97DE08AF3057B1 /* MAGScrollViewComfortTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79DEA77F5997891B3D34FEF5867E077C /* MAGComfortTextInput-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A1FF496BDC9A6BADD9530C03436C10 /* MAGComfortTextInput-dummy.m */; };
+		7A82B764A2AABDABD4EA750973780C67 /* MAGMatveevReusable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A5B320E75C268A7882BE7B436B7AC /* MAGMatveevReusable-dummy.m */; };
 		7B66CF7A2C5C6CD33265B65C79113708 /* libextobjc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B3B8147F3D311EB96B88A137D5F576 /* libextobjc-dummy.m */; };
-		7D212338FB2C633D290DEEC572E54833 /* MAGFreeSpaceLongTouchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D238D8A4EAB093FB5A07CADAF751DCF8 /* MAGFreeSpaceLongTouchDetector.m */; };
-		7FC3BD627ED9987922F8073EC9B551C5 /* MAGKeyboardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EF203273C90255FCC09343906A3D0A02 /* MAGKeyboardInfo.m */; };
-		885E4CA5A3F8679F27D0AE6308147DA4 /* MAGMatveevReusable.h in Headers */ = {isa = PBXBuildFile; fileRef = C4C6C4AAA63CD510DCADC8820E082DAF /* MAGMatveevReusable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		897B4E2565EE98FC9BB9746E3961DE3A /* MAGCommonDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1663A2DABB0D2057F822F11BA94DAB /* MAGCommonDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A88E2CB5B4A91F55E67C4196261BD58 /* MAGComfortTextInput-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A1FF496BDC9A6BADD9530C03436C10 /* MAGComfortTextInput-dummy.m */; };
+		831178F03F87A6AADD9364E452170A51 /* MAGTapDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE5426312B94CD8375EFD940ED2F678 /* MAGTapDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92474AFC89B268A87687486C825E996B /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB96196FF55C7E1648D7911EDE1C084 /* EXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92CDB57740035DCA8B350463B9842E1F /* NSObject+MAGMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D4A9A496A29479B576190B0F85CF4 /* NSObject+MAGMore.m */; };
 		9703B0FB4D9632B3C0BAC85B844FCE2D /* NSMethodSignature+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = C95375CE3F0AFA10DC691F95FABD5827 /* NSMethodSignature+EXT.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9728A28B07F053568D66CCF37DD2AE00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0CC687A1A88F6916D36DD0C09E9572 /* Foundation.framework */; };
+		97E2445738797FFD372ECF6C4BB1752D /* UITextView+MAGMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 87CAB6579B866B2FFC108CE979482D5C /* UITextView+MAGMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AD859A154C240DE43764F182790DB7E /* MAGScrollViewComfortTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890CA27837788FC7212E0AA985E727E /* MAGScrollViewComfortTextInput.m */; };
 		9B947107EE23C57583C4154D8280DFC1 /* Pods-MAGComfortTextInput_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5A3EBA3F9343C5C23AED9C0CFFE3E2 /* Pods-MAGComfortTextInput_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A36CB59DE17F35E31EA51797F4176A9F /* UINavigationBar+MAGMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E1647AB2BDFBF27DEA143668B4A984 /* UINavigationBar+MAGMore.m */; };
-		A609549FA304F7FFE5D46D41E15BBAC3 /* MAGComfortTextInput_umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD07445DB062EEFD7D263AA244412D5 /* MAGComfortTextInput_umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A832963F00AC6BEEDA4B975752102CE1 /* EXTSelectorChecking.h in Headers */ = {isa = PBXBuildFile; fileRef = ECDD6AF65E19952AD0DFFAD473449573 /* EXTSelectorChecking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8FF687AA40A1CA60CC45BE647091990 /* extobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B8980692BBED8EF37F02FE23B36F43 /* extobjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD837B7C700FDF86832A66C091BE80E6 /* NSMethodSignature+EXT.h in Headers */ = {isa = PBXBuildFile; fileRef = CF0C6F0EA41E497DB8330A9D168F2A27 /* NSMethodSignature+EXT.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B201335966D662A3D197121FCAE284A4 /* EXTConcreteProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BD360B6AD9C92B0C6CDEAE842B3FEDE8 /* EXTConcreteProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8D924627F1995BB0F1E82F3C89D5F1A /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 8385E7184CA5D22CEA435ED7A08102C5 /* EXTScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFB8DC8D1B83375F10346692778F18AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0CC687A1A88F6916D36DD0C09E9572 /* Foundation.framework */; };
-		C7326E561DDC2C36004FBD1A /* MAGComfortTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = C7326E541DDC2C28004FBD1A /* MAGComfortTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C78844A6DAA9617017EF38D64FEA0B4D /* MAGCommonDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 08435E473126707D5E52167AD9058739 /* MAGCommonDefines.m */; };
+		C8A2F6E78AC9B87290F8F8283366A933 /* MAGBaseComfortTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F86389FCE4759D0C4227BA2EC7FE6B5 /* MAGBaseComfortTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB2AFB8B1BDEF6CC01ED07A1DAE4A961 /* MAGLongTouchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D3A2BDC21444EAA36CBE79BC74EC95 /* MAGLongTouchDetector.m */; };
 		D093F184B5D201F9A1262908E0EC52BF /* EXTNil.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6433A39DA0FE4CBA1E8BAE20B2AB33 /* EXTNil.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D1EAF29B97DF04BDBCFF0BF3002D9AFF /* Pods-MAGComfortTextInput_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE741363F2F610B403B7C113A499BB98 /* Pods-MAGComfortTextInput_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7629A9AA4A3FBF4B94F275382B9AFD2 /* MAGMatveevReusable.h in Headers */ = {isa = PBXBuildFile; fileRef = C4C6C4AAA63CD510DCADC8820E082DAF /* MAGMatveevReusable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D968DE5523B6C0F503E500F213AD52F3 /* MAGComfortTextInput_umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B1283048A4D164941C59ED2F8DCFF6B /* MAGComfortTextInput_umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA8FC0CABD981714A7A4BBA37BD00CE1 /* EXTNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E040B78EE43011A8CD0C9B87B33A97F /* EXTNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC13007C0FEDEBA0B1695613FDBBB0AB /* MAGLongTouchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D17D5671F07D498859116443B55FC /* MAGLongTouchDetector.m */; };
-		E44469FD6761FF58DCD3354A7B0BE5A8 /* MAGKeyboardInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F2F188E1FC39D24982D980650738768 /* MAGKeyboardInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB07D7BCA49E78FDB158EC192FA49514 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0CC687A1A88F6916D36DD0C09E9572 /* Foundation.framework */; };
+		E06D8EA71F386601EB6398F3D91C792E /* MAGViewComfortTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B1FB00F2C669728306C5973F9EE8EE /* MAGViewComfortTextInput.m */; };
+		E250DD67CAB47586B9C62E6529AB03D7 /* MAGFreeSpaceTouchDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = B77CA38D495EB4EFAF783B5E95BD9172 /* MAGFreeSpaceTouchDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4C947F52552FADAFF6D560CF38CB38B /* MAGKeyboardInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D5E6BA3AD2A0DC2488502F4321B7F8 /* MAGKeyboardInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4F69A69D1E69BD081DE419B47484FF7 /* EXTADT.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4F00F0EDAC678F00B045356DAE931C /* EXTADT.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E621AB895421D2B074C625CB258E710F /* MAGMatveevReusable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 920599370FE19FF88799ECF49EF3D26E /* MAGMatveevReusable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8414AFA771AC1B3D10B4CF85D65EE66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0CC687A1A88F6916D36DD0C09E9572 /* Foundation.framework */; };
+		E6F7B14BEF3B95BC4BD9C0F34A437ED8 /* MAGKeyboardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6420C9B8BF8AB3598602F25B4CA7AFBE /* MAGKeyboardInfo.m */; };
+		E79C908BB0F96D4B9B06F785C17F8ED4 /* UINavigationBar+MAGMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E1647AB2BDFBF27DEA143668B4A984 /* UINavigationBar+MAGMore.m */; };
+		E88B23D0E58C7D997CDA000369133ED7 /* UIViewController+MAGMore.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AEB63119D8D4FF288E5450FBEDD067 /* UIViewController+MAGMore.m */; };
+		E9B50BDBAD6E8238482BC1F8370BD5AB /* MAGMatveevReusable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 920599370FE19FF88799ECF49EF3D26E /* MAGMatveevReusable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA443A171F8FA181413A80CD9DD63C16 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F3DD27E095A820C677611982A81842 /* metamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EABE2B435D1478C0545CC6C0418E2372 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CFA631786DAAB6C27836747D3558FB /* EXTScope.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		EEDF85C4FF75C63DF9CF9D969803DBE0 /* Pods-MAGComfortTextInput_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B163165DD856997C75CCD2D74B471 /* Pods-MAGComfortTextInput_Example-dummy.m */; };
-		FB17385EE1553D5DA1463B33B8E15D70 /* UIView+MAGMore.h in Headers */ = {isa = PBXBuildFile; fileRef = B737679A40F6E844EDB61395CB3C876F /* UIView+MAGMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3A219BFBB170C7836D8BEB23BE44F01 /* MAGComfortTextInput-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E4E3663D4F4EAE342678BE7D1A58D5 /* MAGComfortTextInput-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDC6132E5BB70F410DD2E5E106D700DD /* MAGViewComfortTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = B584CEF848E07B91D1759F5BCDC43C83 /* MAGViewComfortTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE8D9864A952CB2C40FF0A11F56B46C5 /* MAGBaseComfortTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E5642961DADCD05E25FD31215C2338FF /* MAGBaseComfortTextInput.m */; };
 		FFE3710F2C2C82C01661112F291437B0 /* libextobjc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F8B02E3FBB9A68077E9FDC195C70FC7 /* libextobjc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFF7752E797A91FB94A5EE557CB18E6B /* MAGLongTouchDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E7F196865E43357C827D61A8E9F2B3 /* MAGLongTouchDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFF6BBBDB2A2F9A1D5E942EEE8D63267 /* MAGCommonDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1663A2DABB0D2057F822F11BA94DAB /* MAGCommonDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +81,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A8A14DA66441E371B0F24134BD47F506;
+			remoteGlobalIDString = 83F4648B36F1B0906414A539CAA3DD51;
 			remoteInfo = MAGMatveevReusable;
 		};
 		5C5FDD949AF7AF4D4560A20F223F977A /* PBXContainerItemProxy */ = {
@@ -93,14 +95,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 06075E0B928DA60AB5DE7E40D1B60ED8;
+			remoteGlobalIDString = 4D5667C1D0B61CCAB8A9F6E3D9888077;
 			remoteInfo = MAGComfortTextInput;
 		};
-		D1587D55C61C1FBDE9BE6F125A943C5D /* PBXContainerItemProxy */ = {
+		FAEDF57E8149A389B3D9E302FE6EC119 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A8A14DA66441E371B0F24134BD47F506;
+			remoteGlobalIDString = 83F4648B36F1B0906414A539CAA3DD51;
 			remoteInfo = MAGMatveevReusable;
 		};
 /* End PBXContainerItemProxy section */
@@ -111,44 +113,45 @@
 		06E3FCE4457B2AA872786259B5A24039 /* Pods-MAGComfortTextInput_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MAGComfortTextInput_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		072F59E84102C7CFFA1076F6DE06AA47 /* MAGComfortTextInput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAGComfortTextInput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08435E473126707D5E52167AD9058739 /* MAGCommonDefines.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MAGCommonDefines.m; path = MAGMatveevReusable/Classes/MAGCommonDefines.m; sourceTree = "<group>"; };
-		0CDCBBA69FCC1D05C54ED615C4587134 /* MAGBaseComfortTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGBaseComfortTextInput.m; sourceTree = "<group>"; };
+		087622D35CF6C89B30A3754A33BADD1C /* MAGComfortTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGComfortTextInput.h; sourceTree = "<group>"; };
 		0D08753C4089EF1151C38415D35AC1ED /* Pods-MAGComfortTextInput_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MAGComfortTextInput_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0D1663A2DABB0D2057F822F11BA94DAB /* MAGCommonDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGCommonDefines.h; path = MAGMatveevReusable/Classes/MAGCommonDefines.h; sourceTree = "<group>"; };
 		1A428A12EE4B6369D5028E80176E6894 /* Pods-MAGComfortTextInput_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MAGComfortTextInput_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1AFD6BC835FA34FE3AA20418938E6052 /* Pods-MAGComfortTextInput_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MAGComfortTextInput_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1C81CBB132C2989927F96C5F2C5B7E97 /* Pods-MAGComfortTextInput_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MAGComfortTextInput_Example.modulemap"; sourceTree = "<group>"; };
-		1FD07445DB062EEFD7D263AA244412D5 /* MAGComfortTextInput_umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGComfortTextInput_umbrella.h; sourceTree = "<group>"; };
 		203BA33E6EC858E35109AFA7F5C60656 /* MAGMatveevReusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAGMatveevReusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B1FB00F2C669728306C5973F9EE8EE /* MAGViewComfortTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGViewComfortTextInput.m; sourceTree = "<group>"; };
 		26FC143A0135DF1B6397DCE717174EE8 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTRuntimeExtensions.h; path = extobjc/EXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		2A05DF9FD943982975EBA306944D5683 /* MAGMatveevReusable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MAGMatveevReusable.xcconfig; sourceTree = "<group>"; };
 		2A30AD2AC9393F58569374ECFA52A11E /* UIView+MAGMore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MAGMore.m"; path = "MAGMatveevReusable/Classes/UIView+MAGMore.m"; sourceTree = "<group>"; };
-		2C8D17D5671F07D498859116443B55FC /* MAGLongTouchDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGLongTouchDetector.m; sourceTree = "<group>"; };
 		325CB40A25BE3FE9D4BF55AB80F66E50 /* Pods-MAGComfortTextInput_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MAGComfortTextInput_Tests-dummy.m"; sourceTree = "<group>"; };
+		35179557E5D2FA040A803D796D9A128C /* MAGLongTouchDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGLongTouchDetector.h; sourceTree = "<group>"; };
 		38A853EFD259B8956CF8258892B72E6D /* NSInvocation+EXT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+EXT.m"; path = "extobjc/NSInvocation+EXT.m"; sourceTree = "<group>"; };
 		3985E4A6B33B6D3C5FE929C95F447243 /* MAGComfortTextInput.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MAGComfortTextInput.xcconfig; sourceTree = "<group>"; };
+		3DE5426312B94CD8375EFD940ED2F678 /* MAGTapDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGTapDetector.h; sourceTree = "<group>"; };
 		3E62B305DBA7999286B4AAD9A19DE038 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4213DFA48FF0213DCDF96FB6B7BFEF2F /* UINavigationBar+MAGMore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+MAGMore.h"; path = "MAGMatveevReusable/Classes/UINavigationBar+MAGMore.h"; sourceTree = "<group>"; };
+		4B1283048A4D164941C59ED2F8DCFF6B /* MAGComfortTextInput_umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGComfortTextInput_umbrella.h; sourceTree = "<group>"; };
+		4C9F9256FFD7B678598BA22E2BDFA650 /* MAGTapDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGTapDetector.m; sourceTree = "<group>"; };
 		4F6D4A979886713EE2DF782C94592E74 /* libextobjc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libextobjc-prefix.pch"; sourceTree = "<group>"; };
 		4F8B02E3FBB9A68077E9FDC195C70FC7 /* libextobjc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libextobjc-umbrella.h"; sourceTree = "<group>"; };
-		501C2D702E8D8FD84CB868D270C948E9 /* MAGBaseComfortTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGBaseComfortTextInput.h; sourceTree = "<group>"; };
 		5097B1761AE37253F7FDAF191BA0A972 /* MAGMatveevReusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAGMatveevReusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A1FF496BDC9A6BADD9530C03436C10 /* MAGComfortTextInput-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MAGComfortTextInput-dummy.m"; sourceTree = "<group>"; };
 		51DBEAAADA69BA8328B6B9A0A7BCB7B0 /* NSInvocation+EXT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+EXT.h"; path = "extobjc/NSInvocation+EXT.h"; sourceTree = "<group>"; };
 		533A24E2B8DED014FE8F79DCAB0ADC1B /* Pods-MAGComfortTextInput_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MAGComfortTextInput_Example-resources.sh"; sourceTree = "<group>"; };
-		54BD8B23DF2B7D37DF8B811A4E2DA1B2 /* MAGViewComfortTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGViewComfortTextInput.m; sourceTree = "<group>"; };
 		59E472DCE9347F4EFE08480E0655C0A6 /* EXTSynthesize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTSynthesize.h; path = extobjc/EXTSynthesize.h; sourceTree = "<group>"; };
 		5E1DC26D5752D2935760952A9A0C8092 /* MAGComfortTextInput-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MAGComfortTextInput-prefix.pch"; sourceTree = "<group>"; };
 		5E5A3EBA3F9343C5C23AED9C0CFFE3E2 /* Pods-MAGComfortTextInput_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MAGComfortTextInput_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5F86389FCE4759D0C4227BA2EC7FE6B5 /* MAGBaseComfortTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGBaseComfortTextInput.h; sourceTree = "<group>"; };
 		624977493B01382A584231A5A1026586 /* Pods-MAGComfortTextInput_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MAGComfortTextInput_Tests.modulemap"; sourceTree = "<group>"; };
+		6420C9B8BF8AB3598602F25B4CA7AFBE /* MAGKeyboardInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGKeyboardInfo.m; sourceTree = "<group>"; };
 		65B3B8147F3D311EB96B88A137D5F576 /* libextobjc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libextobjc-dummy.m"; sourceTree = "<group>"; };
-		66E7F196865E43357C827D61A8E9F2B3 /* MAGLongTouchDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGLongTouchDetector.h; sourceTree = "<group>"; };
 		6A771C6A527C931637EA220E427E062C /* Pods-MAGComfortTextInput_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MAGComfortTextInput_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6B71850BEC8A2E8FAB93D4839752464B /* MAGScrollViewComfortTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGScrollViewComfortTextInput.h; sourceTree = "<group>"; };
 		6E040B78EE43011A8CD0C9B87B33A97F /* EXTNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTNil.h; path = extobjc/EXTNil.h; sourceTree = "<group>"; };
-		6F2F188E1FC39D24982D980650738768 /* MAGKeyboardInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGKeyboardInfo.h; sourceTree = "<group>"; };
 		747B163165DD856997C75CCD2D74B471 /* Pods-MAGComfortTextInput_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MAGComfortTextInput_Example-dummy.m"; sourceTree = "<group>"; };
 		75F3DD27E095A820C677611982A81842 /* metamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = extobjc/metamacros.h; sourceTree = "<group>"; };
 		7793BFA7D7E4BC4648DA278E51C007A0 /* EXTSafeCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTSafeCategory.m; path = extobjc/EXTSafeCategory.m; sourceTree = "<group>"; };
+		7890CA27837788FC7212E0AA985E727E /* MAGScrollViewComfortTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGScrollViewComfortTextInput.m; sourceTree = "<group>"; };
 		799CCD5B3D5CB27A5ECF7129AB907D4C /* libextobjc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = libextobjc.modulemap; sourceTree = "<group>"; };
 		7A4F00F0EDAC678F00B045356DAE931C /* EXTADT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTADT.h; path = extobjc/EXTADT.h; sourceTree = "<group>"; };
 		7F6D4DA6BAAB54AF55E3E482B77011B7 /* libextobjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libextobjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +164,7 @@
 		8E29E85D3A4FE204AEC642345D26034F /* UIViewController+MAGMore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MAGMore.h"; path = "MAGMatveevReusable/Classes/UIViewController+MAGMore.h"; sourceTree = "<group>"; };
 		920599370FE19FF88799ECF49EF3D26E /* MAGMatveevReusable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MAGMatveevReusable-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97D3A2BDC21444EAA36CBE79BC74EC95 /* MAGLongTouchDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGLongTouchDetector.m; sourceTree = "<group>"; };
 		98B8980692BBED8EF37F02FE23B36F43 /* extobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = extobjc.h; path = extobjc/extobjc.h; sourceTree = "<group>"; };
 		9BAF9067FB15031EA820350015787928 /* NSObject+MAGMore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MAGMore.h"; path = "MAGMatveevReusable/Classes/NSObject+MAGMore.h"; sourceTree = "<group>"; };
 		9C453448115AC3BE6A537B71FF010404 /* Pods-MAGComfortTextInput_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MAGComfortTextInput_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -174,15 +178,16 @@
 		A30261057CD2DA422ABC6A914710D8D2 /* Pods_MAGComfortTextInput_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAGComfortTextInput_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33795C6E88A3F461D81C42A65FC1566 /* MAGMatveevReusable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MAGMatveevReusable.modulemap; sourceTree = "<group>"; };
 		B03FA0E3651BB24148AA4FC198A26432 /* MAGComfortTextInput.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MAGComfortTextInput.modulemap; sourceTree = "<group>"; };
+		B584CEF848E07B91D1759F5BCDC43C83 /* MAGViewComfortTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGViewComfortTextInput.h; sourceTree = "<group>"; };
 		B737679A40F6E844EDB61395CB3C876F /* UIView+MAGMore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MAGMore.h"; path = "MAGMatveevReusable/Classes/UIView+MAGMore.h"; sourceTree = "<group>"; };
+		B77CA38D495EB4EFAF783B5E95BD9172 /* MAGFreeSpaceTouchDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGFreeSpaceTouchDetector.h; sourceTree = "<group>"; };
 		B7AEB63119D8D4FF288E5450FBEDD067 /* UIViewController+MAGMore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MAGMore.m"; path = "MAGMatveevReusable/Classes/UIViewController+MAGMore.m"; sourceTree = "<group>"; };
-		BBC84A0CD347177E26F442C7E2B5B78C /* MAGFreeSpaceLongTouchDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGFreeSpaceLongTouchDetector.h; sourceTree = "<group>"; };
 		BD360B6AD9C92B0C6CDEAE842B3FEDE8 /* EXTConcreteProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTConcreteProtocol.h; path = extobjc/EXTConcreteProtocol.h; sourceTree = "<group>"; };
 		BD565745571DB7973B68643BF4E63977 /* UITextView+MAGMore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+MAGMore.m"; path = "MAGMatveevReusable/Classes/UITextView+MAGMore.m"; sourceTree = "<group>"; };
 		BE9AE050D7369CCBD9367C9003A9412A /* EXTSelectorChecking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTSelectorChecking.m; path = extobjc/EXTSelectorChecking.m; sourceTree = "<group>"; };
 		C007912B6E45BBE19AE40F73BA77F5A3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4C6C4AAA63CD510DCADC8820E082DAF /* MAGMatveevReusable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGMatveevReusable.h; path = MAGMatveevReusable/Classes/MAGMatveevReusable.h; sourceTree = "<group>"; };
-		C7326E541DDC2C28004FBD1A /* MAGComfortTextInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGComfortTextInput.h; sourceTree = "<group>"; };
+		C6D5E6BA3AD2A0DC2488502F4321B7F8 /* MAGKeyboardInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGKeyboardInfo.h; sourceTree = "<group>"; };
 		C95375CE3F0AFA10DC691F95FABD5827 /* NSMethodSignature+EXT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+EXT.m"; path = "extobjc/NSMethodSignature+EXT.m"; sourceTree = "<group>"; };
 		CAB96196FF55C7E1648D7911EDE1C084 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = extobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		CE741363F2F610B403B7C113A499BB98 /* Pods-MAGComfortTextInput_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MAGComfortTextInput_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -190,20 +195,28 @@
 		CF0C6F0EA41E497DB8330A9D168F2A27 /* NSMethodSignature+EXT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+EXT.h"; path = "extobjc/NSMethodSignature+EXT.h"; sourceTree = "<group>"; };
 		CF0CC687A1A88F6916D36DD0C09E9572 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D0C35AB937E86FB268B60AB80EF1285D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D238D8A4EAB093FB5A07CADAF751DCF8 /* MAGFreeSpaceLongTouchDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGFreeSpaceLongTouchDetector.m; sourceTree = "<group>"; };
 		DF1938EC9D60AE9E47A67765D4468C17 /* EXTSafeCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTSafeCategory.h; path = extobjc/EXTSafeCategory.h; sourceTree = "<group>"; };
-		E00D77ABF580E939FCF1831B1DAB75EA /* MAGViewComfortTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGViewComfortTextInput.h; sourceTree = "<group>"; };
-		E62FCA92997C2767B1744088A56BA2F0 /* MAGScrollViewComfortTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGScrollViewComfortTextInput.m; sourceTree = "<group>"; };
+		E5642961DADCD05E25FD31215C2338FF /* MAGBaseComfortTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGBaseComfortTextInput.m; sourceTree = "<group>"; };
 		E6396088D263F33C03F383242A0AA37F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7D58E6859C62A5984F6A1EFAED65D60 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTRuntimeExtensions.m; path = extobjc/EXTRuntimeExtensions.m; sourceTree = "<group>"; };
 		ECDD6AF65E19952AD0DFFAD473449573 /* EXTSelectorChecking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTSelectorChecking.h; path = extobjc/EXTSelectorChecking.h; sourceTree = "<group>"; };
 		EEAA7E2B68ABCFE5324EAD58A8BDAEAB /* MAGMatveevReusable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MAGMatveevReusable-prefix.pch"; sourceTree = "<group>"; };
-		EF203273C90255FCC09343906A3D0A02 /* MAGKeyboardInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGKeyboardInfo.m; sourceTree = "<group>"; };
+		F6C0C477F1D1A8DBAD97DE08AF3057B1 /* MAGScrollViewComfortTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAGScrollViewComfortTextInput.h; sourceTree = "<group>"; };
 		F6FC56F03FC2CB4B6B6AC6133AF90309 /* libextobjc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libextobjc.xcconfig; sourceTree = "<group>"; };
 		FA6433A39DA0FE4CBA1E8BAE20B2AB33 /* EXTNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTNil.m; path = extobjc/EXTNil.m; sourceTree = "<group>"; };
+		FAF4A6B8A017737BAAD6B389B9256559 /* MAGFreeSpaceTouchDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MAGFreeSpaceTouchDetector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B95DE749356788396FB6B36EE8B1D88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9728A28B07F053568D66CCF37DD2AE00 /* Foundation.framework in Frameworks */,
+				26AEF0930D6E39FF72C301D741090E24 /* MAGMatveevReusable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E39C78DCEA2E4B6662274D50B00EE31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,11 +225,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		493B0DE0F9C28908FB5F732A4A20B26D /* Frameworks */ = {
+		545BAA3D43C4AEBCDACDEB1C1BE082FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64CDE8C951779A38FD32AF9E557B0975 /* Foundation.framework in Frameworks */,
+				DB07D7BCA49E78FDB158EC192FA49514 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,15 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AEE39DA9E138B362335B2A3A18672C4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC152B8E45533008A1769DD3AF532E32 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8414AFA771AC1B3D10B4CF85D65EE66 /* Foundation.framework in Frameworks */,
-				508773C3614351E517C1E207E5BFC36C /* MAGMatveevReusable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +325,7 @@
 		41D9A6B35B204E87D2F7E082233E58E3 /* MAGComfortTextInput */ = {
 			isa = PBXGroup;
 			children = (
-				84C7516D9C152F82CFF908E4273C6146 /* MAGComfortTextInput */,
+				F975F257C6705A1B4A16260F43D8FADD /* MAGComfortTextInput */,
 				98D00841D581D497ABC814023C000C82 /* Support Files */,
 			);
 			name = MAGComfortTextInput;
@@ -443,14 +447,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		84C7516D9C152F82CFF908E4273C6146 /* MAGComfortTextInput */ = {
-			isa = PBXGroup;
-			children = (
-				DFA87E83F3C0F7C74FDE515795E38EFC /* Classes */,
-			);
-			path = MAGComfortTextInput;
-			sourceTree = "<group>";
-		};
 		8CA48396C7C0C6959A2E641B33500B55 /* EXTSynthesize */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +496,29 @@
 			name = RuntimeExtensions;
 			sourceTree = "<group>";
 		};
+		B53AF4D5BEBF412E9968A5771673C985 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				087622D35CF6C89B30A3754A33BADD1C /* MAGComfortTextInput.h */,
+				5F86389FCE4759D0C4227BA2EC7FE6B5 /* MAGBaseComfortTextInput.h */,
+				E5642961DADCD05E25FD31215C2338FF /* MAGBaseComfortTextInput.m */,
+				4B1283048A4D164941C59ED2F8DCFF6B /* MAGComfortTextInput_umbrella.h */,
+				B77CA38D495EB4EFAF783B5E95BD9172 /* MAGFreeSpaceTouchDetector.h */,
+				FAF4A6B8A017737BAAD6B389B9256559 /* MAGFreeSpaceTouchDetector.m */,
+				C6D5E6BA3AD2A0DC2488502F4321B7F8 /* MAGKeyboardInfo.h */,
+				6420C9B8BF8AB3598602F25B4CA7AFBE /* MAGKeyboardInfo.m */,
+				35179557E5D2FA040A803D796D9A128C /* MAGLongTouchDetector.h */,
+				97D3A2BDC21444EAA36CBE79BC74EC95 /* MAGLongTouchDetector.m */,
+				F6C0C477F1D1A8DBAD97DE08AF3057B1 /* MAGScrollViewComfortTextInput.h */,
+				7890CA27837788FC7212E0AA985E727E /* MAGScrollViewComfortTextInput.m */,
+				B584CEF848E07B91D1759F5BCDC43C83 /* MAGViewComfortTextInput.h */,
+				23B1FB00F2C669728306C5973F9EE8EE /* MAGViewComfortTextInput.m */,
+				3DE5426312B94CD8375EFD940ED2F678 /* MAGTapDetector.h */,
+				4C9F9256FFD7B678598BA22E2BDFA650 /* MAGTapDetector.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		B705EDCA1D5F0F7F2ECD2C5E915DCAEC /* EXTKeyPathCoding */ = {
 			isa = PBXGroup;
 			children = (
@@ -515,27 +534,6 @@
 				A2871C12087E9DFB61C0F26BF7218A6C /* EXTConcreteProtocol.m */,
 			);
 			name = EXTConcreteProtocol;
-			sourceTree = "<group>";
-		};
-		DFA87E83F3C0F7C74FDE515795E38EFC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C7326E541DDC2C28004FBD1A /* MAGComfortTextInput.h */,
-				501C2D702E8D8FD84CB868D270C948E9 /* MAGBaseComfortTextInput.h */,
-				0CDCBBA69FCC1D05C54ED615C4587134 /* MAGBaseComfortTextInput.m */,
-				1FD07445DB062EEFD7D263AA244412D5 /* MAGComfortTextInput_umbrella.h */,
-				BBC84A0CD347177E26F442C7E2B5B78C /* MAGFreeSpaceLongTouchDetector.h */,
-				D238D8A4EAB093FB5A07CADAF751DCF8 /* MAGFreeSpaceLongTouchDetector.m */,
-				6F2F188E1FC39D24982D980650738768 /* MAGKeyboardInfo.h */,
-				EF203273C90255FCC09343906A3D0A02 /* MAGKeyboardInfo.m */,
-				66E7F196865E43357C827D61A8E9F2B3 /* MAGLongTouchDetector.h */,
-				2C8D17D5671F07D498859116443B55FC /* MAGLongTouchDetector.m */,
-				6B71850BEC8A2E8FAB93D4839752464B /* MAGScrollViewComfortTextInput.h */,
-				E62FCA92997C2767B1744088A56BA2F0 /* MAGScrollViewComfortTextInput.m */,
-				E00D77ABF580E939FCF1831B1DAB75EA /* MAGViewComfortTextInput.h */,
-				54BD8B23DF2B7D37DF8B811A4E2DA1B2 /* MAGViewComfortTextInput.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		E275B111E54D3737D7DE839DC042109E /* Support Files */ = {
@@ -570,6 +568,14 @@
 			path = "Target Support Files/Pods-MAGComfortTextInput_Example";
 			sourceTree = "<group>";
 		};
+		F975F257C6705A1B4A16260F43D8FADD /* MAGComfortTextInput */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF4D5BEBF412E9968A5771673C985 /* Classes */,
+			);
+			path = MAGComfortTextInput;
+			sourceTree = "<group>";
+		};
 		FDF22418FB10F118E1BA757B5130E12D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,22 +596,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		56CF65F4382F1AD6A20E25C08F2FFCB5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				116B43549E02E56E3FFBB2421A24A088 /* MAGBaseComfortTextInput.h in Headers */,
-				2C95DF097AAAD1CF2672661451529C5B /* MAGComfortTextInput-umbrella.h in Headers */,
-				C7326E561DDC2C36004FBD1A /* MAGComfortTextInput.h in Headers */,
-				A609549FA304F7FFE5D46D41E15BBAC3 /* MAGComfortTextInput_umbrella.h in Headers */,
-				4ADDA13DBBA53D99824DAB78597C144E /* MAGFreeSpaceLongTouchDetector.h in Headers */,
-				E44469FD6761FF58DCD3354A7B0BE5A8 /* MAGKeyboardInfo.h in Headers */,
-				FFF7752E797A91FB94A5EE557CB18E6B /* MAGLongTouchDetector.h in Headers */,
-				250C94C63713B2057BC13A4C11316E00 /* MAGScrollViewComfortTextInput.h in Headers */,
-				32C33D5EF5CFC3E662783740F0EEE584 /* MAGViewComfortTextInput.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8C9D22F7BADD88E9BD0010F2158F3F66 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -614,18 +604,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E29569C047331A4F777F65079CF7BBF2 /* Headers */ = {
+		9B5B9A1AFF97A26994B3BF9826126C1D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897B4E2565EE98FC9BB9746E3961DE3A /* MAGCommonDefines.h in Headers */,
-				E621AB895421D2B074C625CB258E710F /* MAGMatveevReusable-umbrella.h in Headers */,
-				885E4CA5A3F8679F27D0AE6308147DA4 /* MAGMatveevReusable.h in Headers */,
-				695EBC14C2B21F1AB3EFC02A5097FCE1 /* NSObject+MAGMore.h in Headers */,
-				750E1868A59AFA26A76E1D63DEAEE281 /* UINavigationBar+MAGMore.h in Headers */,
-				148E81B2D52ECB7E9EEFC0EC7163A37A /* UITextView+MAGMore.h in Headers */,
-				FB17385EE1553D5DA1463B33B8E15D70 /* UIView+MAGMore.h in Headers */,
-				4481CDACD0EDBEAF814CE485437EAA86 /* UIViewController+MAGMore.h in Headers */,
+				FFF6BBBDB2A2F9A1D5E942EEE8D63267 /* MAGCommonDefines.h in Headers */,
+				E9B50BDBAD6E8238482BC1F8370BD5AB /* MAGMatveevReusable-umbrella.h in Headers */,
+				D7629A9AA4A3FBF4B94F275382B9AFD2 /* MAGMatveevReusable.h in Headers */,
+				18FB1E12B626B1A75B4E18A87889D4DF /* NSObject+MAGMore.h in Headers */,
+				6F34E836D3B29E773BCED36617BE1508 /* UINavigationBar+MAGMore.h in Headers */,
+				97E2445738797FFD372ECF6C4BB1752D /* UITextView+MAGMore.h in Headers */,
+				4C06C276515449803D6E3C9B94AFE6BF /* UIView+MAGMore.h in Headers */,
+				0FA6D652E192D5AA5D88EB1321951F14 /* UIViewController+MAGMore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1787C9506CA797A4B034A16854A726 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8A2F6E78AC9B87290F8F8283366A933 /* MAGBaseComfortTextInput.h in Headers */,
+				F3A219BFBB170C7836D8BEB23BE44F01 /* MAGComfortTextInput-umbrella.h in Headers */,
+				03DD1AA303F1F4A06C61D94C08F97D19 /* MAGComfortTextInput.h in Headers */,
+				D968DE5523B6C0F503E500F213AD52F3 /* MAGComfortTextInput_umbrella.h in Headers */,
+				E250DD67CAB47586B9C62E6529AB03D7 /* MAGFreeSpaceTouchDetector.h in Headers */,
+				E4C947F52552FADAFF6D560CF38CB38B /* MAGKeyboardInfo.h in Headers */,
+				551CBED9F1334AE19D392B27C8625321 /* MAGLongTouchDetector.h in Headers */,
+				75849B21D715DC30E9AA972461C4F296 /* MAGScrollViewComfortTextInput.h in Headers */,
+				FDC6132E5BB70F410DD2E5E106D700DD /* MAGViewComfortTextInput.h in Headers */,
+				831178F03F87A6AADD9364E452170A51 /* MAGTapDetector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,24 +660,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		06075E0B928DA60AB5DE7E40D1B60ED8 /* MAGComfortTextInput */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9CF34A8637D3858A8EC1AFBE49586F59 /* Build configuration list for PBXNativeTarget "MAGComfortTextInput" */;
-			buildPhases = (
-				9662CBA48A06949153A9291A6304455F /* Sources */,
-				BC152B8E45533008A1769DD3AF532E32 /* Frameworks */,
-				56CF65F4382F1AD6A20E25C08F2FFCB5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2E278E5D19E9E6692D026D7C57E39F3F /* PBXTargetDependency */,
-			);
-			name = MAGComfortTextInput;
-			productName = MAGComfortTextInput;
-			productReference = 072F59E84102C7CFFA1076F6DE06AA47 /* MAGComfortTextInput.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		3545A3B1EB25F90BB9778A1B258856E0 /* Pods-MAGComfortTextInput_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 027306AE2A4B232DAA0DEFAA7C24EB55 /* Build configuration list for PBXNativeTarget "Pods-MAGComfortTextInput_Example" */;
@@ -691,6 +680,24 @@
 			productReference = 879B48224CADDC1D978BFC7C0FFCF616 /* Pods_MAGComfortTextInput_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4D5667C1D0B61CCAB8A9F6E3D9888077 /* MAGComfortTextInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C15FB86A7E064D25EED95D772D886C30 /* Build configuration list for PBXNativeTarget "MAGComfortTextInput" */;
+			buildPhases = (
+				20A434EF1FC6B5048FF05F3BD112C87B /* Sources */,
+				0B95DE749356788396FB6B36EE8B1D88 /* Frameworks */,
+				CD1787C9506CA797A4B034A16854A726 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD65BE2C1F8A0923F484374D0A59FF41 /* PBXTargetDependency */,
+			);
+			name = MAGComfortTextInput;
+			productName = MAGComfortTextInput;
+			productReference = 072F59E84102C7CFFA1076F6DE06AA47 /* MAGComfortTextInput.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		7F2461A9D9724998746452861A76414F /* libextobjc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9784B452082E6E8AE675C1C526502ACA /* Build configuration list for PBXNativeTarget "libextobjc" */;
@@ -708,13 +715,13 @@
 			productReference = 7F6D4DA6BAAB54AF55E3E482B77011B7 /* libextobjc.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A8A14DA66441E371B0F24134BD47F506 /* MAGMatveevReusable */ = {
+		83F4648B36F1B0906414A539CAA3DD51 /* MAGMatveevReusable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A916C9C9CD770F9BD91AF2837D0354A /* Build configuration list for PBXNativeTarget "MAGMatveevReusable" */;
+			buildConfigurationList = 851C68D215F6406A6C5E48556745008D /* Build configuration list for PBXNativeTarget "MAGMatveevReusable" */;
 			buildPhases = (
-				0CAE1C58624F90ADA7C32AF654A63F35 /* Sources */,
-				493B0DE0F9C28908FB5F732A4A20B26D /* Frameworks */,
-				E29569C047331A4F777F65079CF7BBF2 /* Headers */,
+				DB0E35B89A29122F3CFE300CBF47EBFD /* Sources */,
+				545BAA3D43C4AEBCDACDEB1C1BE082FD /* Frameworks */,
+				9B5B9A1AFF97A26994B3BF9826126C1D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -764,8 +771,8 @@
 			projectRoot = "";
 			targets = (
 				7F2461A9D9724998746452861A76414F /* libextobjc */,
-				06075E0B928DA60AB5DE7E40D1B60ED8 /* MAGComfortTextInput */,
-				A8A14DA66441E371B0F24134BD47F506 /* MAGMatveevReusable */,
+				4D5667C1D0B61CCAB8A9F6E3D9888077 /* MAGComfortTextInput */,
+				83F4648B36F1B0906414A539CAA3DD51 /* MAGMatveevReusable */,
 				3545A3B1EB25F90BB9778A1B258856E0 /* Pods-MAGComfortTextInput_Example */,
 				B98A911B429711958A1A056A9BBD2F2F /* Pods-MAGComfortTextInput_Tests */,
 			);
@@ -773,17 +780,18 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0CAE1C58624F90ADA7C32AF654A63F35 /* Sources */ = {
+		20A434EF1FC6B5048FF05F3BD112C87B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2673E1D9C245484438137E6DDAEF966F /* MAGCommonDefines.m in Sources */,
-				1EE8011124C59FC000EFE8C2A7B4B44D /* MAGMatveevReusable-dummy.m in Sources */,
-				92CDB57740035DCA8B350463B9842E1F /* NSObject+MAGMore.m in Sources */,
-				A36CB59DE17F35E31EA51797F4176A9F /* UINavigationBar+MAGMore.m in Sources */,
-				69C0BB569018682D79912DB4A1CD3F73 /* UITextView+MAGMore.m in Sources */,
-				5746249C8D6084F0688A932109035F75 /* UIView+MAGMore.m in Sources */,
-				39E4BFC607EBD83685338DF4CBA2BA5C /* UIViewController+MAGMore.m in Sources */,
+				FE8D9864A952CB2C40FF0A11F56B46C5 /* MAGBaseComfortTextInput.m in Sources */,
+				79DEA77F5997891B3D34FEF5867E077C /* MAGComfortTextInput-dummy.m in Sources */,
+				2B2E19275F48B067D01F49DB06218F71 /* MAGFreeSpaceTouchDetector.m in Sources */,
+				E6F7B14BEF3B95BC4BD9C0F34A437ED8 /* MAGKeyboardInfo.m in Sources */,
+				CB2AFB8B1BDEF6CC01ED07A1DAE4A961 /* MAGLongTouchDetector.m in Sources */,
+				9AD859A154C240DE43764F182790DB7E /* MAGScrollViewComfortTextInput.m in Sources */,
+				E06D8EA71F386601EB6398F3D91C792E /* MAGViewComfortTextInput.m in Sources */,
+				09CCF66F76197779DA94D69418FF9A71 /* MAGTapDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,20 +800,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0123CF9151A761F4FFA32A30FF65C975 /* Pods-MAGComfortTextInput_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9662CBA48A06949153A9291A6304455F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				61148B6D386D00D76F3A6CFFD385F159 /* MAGBaseComfortTextInput.m in Sources */,
-				8A88E2CB5B4A91F55E67C4196261BD58 /* MAGComfortTextInput-dummy.m in Sources */,
-				7D212338FB2C633D290DEEC572E54833 /* MAGFreeSpaceLongTouchDetector.m in Sources */,
-				7FC3BD627ED9987922F8073EC9B551C5 /* MAGKeyboardInfo.m in Sources */,
-				DC13007C0FEDEBA0B1695613FDBBB0AB /* MAGLongTouchDetector.m in Sources */,
-				3798D71A924D1D7D305D1A283A752233 /* MAGScrollViewComfortTextInput.m in Sources */,
-				1CEE66D66DF078E997CB871774567FE4 /* MAGViewComfortTextInput.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,6 +828,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB0E35B89A29122F3CFE300CBF47EBFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C78844A6DAA9617017EF38D64FEA0B4D /* MAGCommonDefines.m in Sources */,
+				7A82B764A2AABDABD4EA750973780C67 /* MAGMatveevReusable-dummy.m in Sources */,
+				4E7EA9BFB120C0D39BF2CB0FA26B6E24 /* NSObject+MAGMore.m in Sources */,
+				E79C908BB0F96D4B9B06F785C17F8ED4 /* UINavigationBar+MAGMore.m in Sources */,
+				38DB1E924CCC39B283FB521A2ECF21E7 /* UITextView+MAGMore.m in Sources */,
+				32E9AD356753BC1031DC3CF0C82E746F /* UIView+MAGMore.m in Sources */,
+				E88B23D0E58C7D997CDA000369133ED7 /* UIViewController+MAGMore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -843,22 +851,22 @@
 			target = 7F2461A9D9724998746452861A76414F /* libextobjc */;
 			targetProxy = 5C5FDD949AF7AF4D4560A20F223F977A /* PBXContainerItemProxy */;
 		};
-		2E278E5D19E9E6692D026D7C57E39F3F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MAGMatveevReusable;
-			target = A8A14DA66441E371B0F24134BD47F506 /* MAGMatveevReusable */;
-			targetProxy = D1587D55C61C1FBDE9BE6F125A943C5D /* PBXContainerItemProxy */;
-		};
 		81A6551687410627C87E172F67016E72 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MAGMatveevReusable;
-			target = A8A14DA66441E371B0F24134BD47F506 /* MAGMatveevReusable */;
+			target = 83F4648B36F1B0906414A539CAA3DD51 /* MAGMatveevReusable */;
 			targetProxy = 354626EDFABB41BB603AFB3E6627123C /* PBXContainerItemProxy */;
+		};
+		CD65BE2C1F8A0923F484374D0A59FF41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MAGMatveevReusable;
+			target = 83F4648B36F1B0906414A539CAA3DD51 /* MAGMatveevReusable */;
+			targetProxy = FAEDF57E8149A389B3D9E302FE6EC119 /* PBXContainerItemProxy */;
 		};
 		E7D375E3EA4C9C355017C0EF4081A038 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MAGComfortTextInput;
-			target = 06075E0B928DA60AB5DE7E40D1B60ED8 /* MAGComfortTextInput */;
+			target = 4D5667C1D0B61CCAB8A9F6E3D9888077 /* MAGComfortTextInput */;
 			targetProxy = 6FC73913BB255D035E2865C694574565 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -899,37 +907,6 @@
 			};
 			name = Debug;
 		};
-		07C131F08D13CB3450A97A15E82C7D87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A05DF9FD943982975EBA306944D5683 /* MAGMatveevReusable.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MAGMatveevReusable/MAGMatveevReusable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MAGMatveevReusable/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MAGMatveevReusable/MAGMatveevReusable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MAGMatveevReusable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		413CFCDFD5703D63A902BC08D130D1C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6FC56F03FC2CB4B6B6AC6133AF90309 /* libextobjc.xcconfig */;
@@ -953,6 +930,37 @@
 				MODULEMAP_FILE = "Target Support Files/libextobjc/libextobjc.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = libextobjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41FDF11E965AF14E39E89950C6E315CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3985E4A6B33B6D3C5FE929C95F447243 /* MAGComfortTextInput.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MAGComfortTextInput/MAGComfortTextInput-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MAGComfortTextInput/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MAGComfortTextInput/MAGComfortTextInput.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MAGComfortTextInput;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -995,37 +1003,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		5F388A95AF7CFBB7068FEB7100F86F0F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A05DF9FD943982975EBA306944D5683 /* MAGMatveevReusable.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MAGMatveevReusable/MAGMatveevReusable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MAGMatveevReusable/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MAGMatveevReusable/MAGMatveevReusable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MAGMatveevReusable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		6F1C370F5AAE3D37C9485C1668F8DDFD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1212,7 +1189,69 @@
 			};
 			name = Debug;
 		};
-		B570E4713BBB4C7FAE439CDDA759BE94 /* Release */ = {
+		AFE98C3CF986355103E015F9272D08A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A05DF9FD943982975EBA306944D5683 /* MAGMatveevReusable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MAGMatveevReusable/MAGMatveevReusable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MAGMatveevReusable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MAGMatveevReusable/MAGMatveevReusable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MAGMatveevReusable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C20B49016656FE7F06373F115795E38E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A05DF9FD943982975EBA306944D5683 /* MAGMatveevReusable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MAGMatveevReusable/MAGMatveevReusable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MAGMatveevReusable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MAGMatveevReusable/MAGMatveevReusable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MAGMatveevReusable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5180B3666B2502E01EA1DEC9B4ECA52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3985E4A6B33B6D3C5FE929C95F447243 /* MAGComfortTextInput.xcconfig */;
 			buildSettings = {
@@ -1243,37 +1282,6 @@
 			};
 			name = Release;
 		};
-		C0879CAEC166B08FF3DD19A25DB6E3E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3985E4A6B33B6D3C5FE929C95F447243 /* MAGComfortTextInput.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MAGComfortTextInput/MAGComfortTextInput-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MAGComfortTextInput/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MAGComfortTextInput/MAGComfortTextInput.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MAGComfortTextInput;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1295,11 +1303,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A916C9C9CD770F9BD91AF2837D0354A /* Build configuration list for PBXNativeTarget "MAGMatveevReusable" */ = {
+		851C68D215F6406A6C5E48556745008D /* Build configuration list for PBXNativeTarget "MAGMatveevReusable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07C131F08D13CB3450A97A15E82C7D87 /* Debug */,
-				5F388A95AF7CFBB7068FEB7100F86F0F /* Release */,
+				AFE98C3CF986355103E015F9272D08A8 /* Debug */,
+				C20B49016656FE7F06373F115795E38E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1313,11 +1321,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CF34A8637D3858A8EC1AFBE49586F59 /* Build configuration list for PBXNativeTarget "MAGComfortTextInput" */ = {
+		C15FB86A7E064D25EED95D772D886C30 /* Build configuration list for PBXNativeTarget "MAGComfortTextInput" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0879CAEC166B08FF3DD19A25DB6E3E5 /* Debug */,
-				B570E4713BBB4C7FAE439CDDA759BE94 /* Release */,
+				41FDF11E965AF14E39E89950C6E315CF /* Debug */,
+				D5180B3666B2502E01EA1DEC9B4ECA52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

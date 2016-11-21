@@ -1,7 +1,7 @@
 
-#import "MAGFreeSpaceLongTouchDetector.h"
+#import "MAGFreeSpaceTouchDetector.h"
 
-@implementation MAGFreeSpaceLongTouchDetector
+@implementation MAGFreeSpaceTouchDetector
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
     BOOL result;

@@ -1,12 +1,12 @@
 
 #import "MAGBaseComfortTextInput.h"
-#import "MAGFreeSpaceLongTouchDetector.h"
+#import "MAGFreeSpaceTouchDetector.h"
 #import "UIView+MAGMore.h"
 #import "MAGCommonDefines.h"
 
 @interface MAGBaseComfortTextInput ()
 
-@property (strong, nonatomic) MAGFreeSpaceLongTouchDetector *tapDetector;
+@property (strong, nonatomic) MAGFreeSpaceTouchDetector *tapDetector;
 
 @end
 
@@ -28,14 +28,16 @@
         [self updateOrderedTextInputControls:orderedTextInputControls];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHideAction) name:UIKeyboardWillHideNotification object:nil];
         
-        _tapDetector = [MAGFreeSpaceLongTouchDetector new];
-        _tapDetector.minimumRequiredPressDuration = @(0);
+        _tapDetector = [MAGFreeSpaceTouchDetector new];
         [_tapDetector attachToTargetView:ownerView];
         __typeof__(self) __weak wself = self;
-        _tapDetector.didFinishedWithTouchUpAtTargetViewLocationBlock = ^(CGPoint point) {
+        _tapDetector.willTappedBlock = ^(CGPoint point) {
+            NSLog(@"WILL TAPPED POINT %@", NSStringFromCGPoint(point));
+        };
+        _tapDetector.didTappedBlock = ^(CGPoint point) {
+            NSLog(@"DID TAPPED POINT %@", NSStringFromCGPoint(point));
             [self hideKeyboardIfTextInputControlsInsideOfViewNotFocused:wself.ownerView ifTappedPoint:point];
         };
-        
     }
     return self;
 }
@@ -157,16 +159,19 @@
 }
 
 - (void)hideKeyboard {
+    NSLog(@"HIDE KEYBOARD");
     [self.ownerView endEditing:YES];
 }
 
 #pragma mark - UITextFieldDelegate DELEGATE
 
 - (void)textFieldWillBeginEditing:(UITextField *)textField {
+    NSLog(@"TF WILL BEGIN");
     //      should be rewritten in subclass
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    NSLog(@"TF SHOULD BEGIN");
     [self textFieldWillBeginEditing:textField];
     return YES;
 }
@@ -185,11 +190,13 @@
 #pragma mark - UITextViewDelegate DELEGATE
 
 - (void)textViewDidBeginEditing:(UITextView *)textView {
+    NSLog(@"TV DID BEGIN");
     //      should be rewritten in subclass
 }
 
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
-    [self textViewDidBeginEditing:textView];
+    NSLog(@"TV SHOULD BEGIN");
+//    [self textViewDidBeginEditing:textView];
     return YES;
 }
 
