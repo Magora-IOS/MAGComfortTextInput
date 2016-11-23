@@ -91,7 +91,7 @@
             }
         }
     }
-    CGFloat textFieldScreenYPosition = [textField mag_viewOriginAtScreenCoordinates].y;
+//    CGFloat textFieldScreenYPosition = [textField mag_viewOriginAtScreenCoordinates].y;
     //NSLog(@"after textField screen coordinates %f",textFieldScreenYPosition);
     
     return result;
@@ -208,7 +208,7 @@
             }
         }
     }
-    CGFloat textFieldScreenYPosition = [textInputControl mag_viewOriginAtScreenCoordinates].y;
+//    CGFloat textFieldScreenYPosition = [textInputControl mag_viewOriginAtScreenCoordinates].y;
     //NSLog(@"after textField screen coordinates %f",textFieldScreenYPosition);
     
     return result;
