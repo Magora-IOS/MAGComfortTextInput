@@ -9,7 +9,6 @@
 
 #import "TableManager.h"
 #import "Cell.h"
-#import "NSObject+MAGMore.h"
 
 @implementation TableManager
 

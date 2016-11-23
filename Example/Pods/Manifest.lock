@@ -34,9 +34,9 @@ PODS:
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.4.1)
   - libextobjc/UmbrellaHeader (0.4.1)
-  - MAGComfortTextInput (0.3.0):
-    - MAGMatveevReusable (~> 0.2.1)
-  - MAGMatveevReusable (0.2.1)
+  - MAGComfortTextInput (0.3.2):
+    - MAGMatveevReusable (~> 0.2.2)
+  - MAGMatveevReusable (0.2.2)
 
 DEPENDENCIES:
   - libextobjc (~> 0.4.1)
@@ -51,13 +51,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MAGMatveevReusable:
-    :commit: c2e8df5101d168d9944aebaefaaca95119f13495
+    :commit: d801262b5ac232ad0898b5972e948047fbf1dd65
     :git: https://github.com/Magora-IOS/MAGMatveevReusable.git
 
 SPEC CHECKSUMS:
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
-  MAGComfortTextInput: d84f2ec8e27442fa5acf7219dd90dd6fd9e87a11
-  MAGMatveevReusable: 3173866eb85cee38a02c88592a66e8219046185b
+  MAGComfortTextInput: 20bcd1466b22a628297278bf39bf24b83d968afb
+  MAGMatveevReusable: ae3e34c512b535bd5411ddf16a3c2096d6746c33
 
 PODFILE CHECKSUM: a1dde56f8a685568cbb61976d802e11c98af7950
 

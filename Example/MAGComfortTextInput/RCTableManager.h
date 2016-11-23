@@ -2,7 +2,6 @@
 #import <Foundation/Foundation.h>
 
 #import "RCTableSection.h"
-#import "MAGCommonDefines.h"
 
 typedef void (^RCTableItemBlock) (id item);
 typedef void (^RCTableItemBlock) (id item);

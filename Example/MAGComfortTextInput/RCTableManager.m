@@ -1,7 +1,5 @@
 
 #import "RCTableManager.h"
-#import "MAGCommonDefines.h"
-#import "UIView+MAGMore.h"
 
 @interface RCTableManager ()
 
