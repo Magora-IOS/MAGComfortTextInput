@@ -13,6 +13,7 @@
 - (void)attachToTargetView:(UIView *)targetView {
     self.targetView = targetView;
     _recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+    self.recognizer.cancelsTouchesInView = NO;
     self.recognizer.numberOfTouchesRequired = 1;
     [self.targetView addGestureRecognizer:self.recognizer];
 }

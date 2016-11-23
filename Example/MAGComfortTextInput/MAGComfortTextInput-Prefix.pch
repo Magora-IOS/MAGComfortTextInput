@@ -15,7 +15,6 @@
     @import Foundation;
 
     #import <libextobjc/extobjc.h>
-    #import <MAGComfortTextInput/MAGComfortTextInput.h>
     #import <MAGMatveevReusable/MAGMatveevReusable.h>
 #endif
 

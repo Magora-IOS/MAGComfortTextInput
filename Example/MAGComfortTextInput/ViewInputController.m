@@ -8,9 +8,9 @@
 
 
 #import "ViewInputController.h"
-//#import "MAGComfortTextInput_umbrella.h"
 #import "ScrollViewInputController.h"
 #import "TableViewInputController.h"
+#import "MAGViewComfortTextInput.h"
 
 @interface ViewInputController ()
 

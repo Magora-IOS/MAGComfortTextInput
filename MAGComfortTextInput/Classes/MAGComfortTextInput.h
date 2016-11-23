@@ -11,11 +11,12 @@
 
 //#import <MAGMatveevReusable/MAGMatveevReusable.h>
 
+#import "BaseComfortTextInput.h"
+#import "MAGFreeSpaceTouchDetector.h"
 #import "MAGKeyboardInfo.h"
 #import "MAGLongTouchDetector.h"
 #import "MAGTapDetector.h"
 #import "MAGViewComfortTextInput.h"
 #import "MAGScrollViewComfortTextInput.h"
-#import "MAGFreeSpaceTouchDetector.h"
 
 #endif /* MAGTablesCollections_h */

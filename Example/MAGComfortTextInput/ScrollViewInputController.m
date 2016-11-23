@@ -8,6 +8,7 @@
 
 
 #import "ScrollViewInputController.h"
+#import "MAGScrollViewComfortTextInput.h"
 
 @interface ScrollViewInputController ()
 

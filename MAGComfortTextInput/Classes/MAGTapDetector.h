@@ -1,7 +1,5 @@
 
-#import <Foundation/Foundation.h>
-
-#import <MAGMatveevReusable/MAGMatveevReusable.h>
+#import "MAGCommonDefines.h"
 
 @interface MAGTapDetector : NSObject
 

@@ -1,5 +1,7 @@
 
 #import "MAGBaseComfortTextInput.h"
+#import "MAGKeyboardInfo.h"
+#import "UIView+MAGMore.h"
 
 @interface MAGBaseComfortTextInput ()
 
