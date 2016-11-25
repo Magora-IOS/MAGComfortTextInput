@@ -3,6 +3,12 @@
 
 @implementation MAGFreeSpaceTouchDetector
 
+- (void)attachToTargetView:(UIView *)targetView {
+    [super attachToTargetView:targetView];
+    
+    self.recognizer.cancelsTouchesInView = NO;
+}
+
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
     BOOL result;
     UIView *tappedView = [touch view];
