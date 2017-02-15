@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-#import "MAGFreeSpaceTouchDetector.h"
+#import <MAGMatveevReusable/MAGFreeSpaceTouchDetector.h>
 
 typedef void(^TextInputBlock)(UIView *textInputControl);
 typedef BOOL(^TextInputCheckBlock)(UIView *textInputControl);
